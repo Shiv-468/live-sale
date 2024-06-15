@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url(./assets/css/root.css);
+*{
+  margin: 0;
+  padding: 0;
+  list-style-type: none !important;
+  text-decoration: none !important;
+  box-sizing: border-box;
+}
+.font_Manrope{
+  font-family: "Manrope", sans-serif;
+}
+.HeroBG{
+  background-image: url(./assets/images/webp/HeroBG.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.navigationDiv{
+  background: var(--white-transp);
+  border-bottom: 1px solid var(--white-border);
+  height: 100px;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  backdrop-filter: blur(20px);
+
+}
+.Logo{
+  width: 47px;
+  height: 47px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*==================== footer ============ */
+.footer_bg{
+  background: linear-gradient(180deg, #000000 12.27%, rgba(0, 0, 0, 0.205103) 82.49%, rgba(0, 0, 0, 0) 100%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+
+
+
+/*========================= max-widths========================= */
+.max_width_626{
+  max-width: 626px;
+}
+/*=============== gap ================== */
+.gap_12{
+  gap: 12px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*=================== margin padding ================== */
+.margin_top_20{
+  margin-top: 20px;
 }
