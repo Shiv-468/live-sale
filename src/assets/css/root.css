@@ -19,15 +19,21 @@
     --black:#010101;
     --yellow: #FFF624;
     --white-smoke: #C1C1C1;
-    --white-light: #F1F1F1;
+    --light-white: #F1F1F1;
     --white-transp: #F1F1F105;
     --white-border: #F1F1F129;
     --gray:#A9A9A9;
+    --gray2:#D9D9D9;
 
 }
-
-.white-light {
-    color: var(--white-light);
+.color_gray2{
+    color: var(--gray2);
+}
+.light_white {
+    color: var(--light-white);
+}
+.color_black{
+    color: var(--black);
 }
 .bg_black{
     background-color: var(--black);
@@ -35,11 +41,11 @@
 .color_gray{
     color: var(--gray);
 }
-.white-smoke {
+.white_smoke {
     color: var(--white-smoke) !important;
 }
 
-.color-yellow {
+.color_yellow {
     color: var(--yellow);
 }
 
@@ -71,7 +77,7 @@
     font-size: var(--font-xl);
 }
 
-.font-2xl {
+.font_2xl {
     font-size: var(--font-2xl);
 }
 

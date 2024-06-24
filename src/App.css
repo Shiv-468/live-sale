@@ -1,57 +1,532 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 @import url(./assets/css/root.css);
-*{
+
+* {
   margin: 0;
   padding: 0;
   list-style-type: none !important;
   text-decoration: none !important;
   box-sizing: border-box;
 }
-.font_Manrope{
+
+.min_h_820 {
+  min-height: 820px;
+}
+
+.font_Manrope {
   font-family: "Manrope", sans-serif;
 }
-.HeroBG{
+
+.HeroBG {
   background-image: url(./assets/images/webp/HeroBG.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-.navigationDiv{
+
+.navigationDiv {
   background: var(--white-transp);
   border-bottom: 1px solid var(--white-border);
   height: 100px;
   padding-top: 26px;
   padding-bottom: 26px;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(10px);
 
 }
-.Logo{
+
+.Logo {
   width: 47px;
   height: 47px;
 }
 
-/*==================== footer ============ */
-.footer_bg{
-  background: linear-gradient(180deg, #000000 12.27%, rgba(0, 0, 0, 0.205103) 82.49%, rgba(0, 0, 0, 0) 100%);
+.BottomBgImg {
+  background-image: url(./assets/images/webp/bgBottomImg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.Aboutdino{
+bottom: 0;
+  right: 18%;
+}
+.AboutCardbg {
+  background-image: url(./assets/images/webp/Aboutcardbg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 818px;
+  background-color: #FFFFFF05;
+  border: 1px solid #FFFFFF33;
+  border-radius: 20px;
 }
 
+.AboutCard {
+  padding: 40px;
+}
+
+.about_coinbox {
+  width: 53px;
+  height: 53px;
+  background: #313131;
+  border-radius: 5px;
+}
+.buy_btn{
+  max-width: 254px;
+  height: 48px;
+  border-radius: 10px;
+  background: #FFF624;
+  border: 0;
+  margin-top: 32px;
+}
+.common_btn{
+  padding: 12px 24px;
+  background: var(--yellow);
+  border-radius: 10px;
+  height: 48px;
+  border: 1px solid transparent;
+}
+.ContractBG{
+  background-image: url("./assets/images/webp/ContractBG.png"), linear-gradient(#141403, #141403);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.CopyDiv{
+  background: #FFFFFF14;
+max-width: 587px;
+}
+.CopyInput{
+  padding: 12px;
+  background: #FFFFFF14;
+  border-style: solid;
+  border-top-left-radius: 8px;
+  outline: none;
+  height: 48px;
+  border-bottom-left-radius: 8px;
+  border-color: #FFFFFF3D;
+  border-right: 1px;
+}
+.btn_transform{
+  margin-left: -9px;
+}
+.TokenBG{
+  background-image: url("./assets/images/webp/TokenomicsBG.png"),linear-gradient(180deg, #000000 14.61%, rgba(0, 0, 0, 0.205103) 82.49%, rgba(0, 0, 0, 0) 100%);
+  background-color: var(--black);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.sclairDiv{
+  background: #FFFFFF0A;
+  border: 1px solid #FFF6243D;
+  border-radius: 6px;
+}
+.TokenImg{
+  max-width: 491px;
+}
+.TokenFox{
+  max-width: 68px;
+}
+.Tokenbaby{
+  max-width: 80px;
+}
+.token_Card{
+  padding: 16px;
+  background: #FFFFFF0F;
+  border: 1px solid;
+  border-radius: 16px;
+}
+.token_Card::after{
+  z-index: -1;
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 1px;
+  background: linear-gradient(96.24deg, rgba(241, 241, 241, 0.24) -31.57%, rgba(241, 241, 241, 0) 125.48%);
+  -webkit-mask:
+    linear-gradient(#FFFFFF0F 0 0) content-box,
+    linear-gradient(#FFFFFF0F 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+
+}
+.babydiv{
+  width: 122px !important;
+  min-height: 122px;
+  background: #191919;
+  border-radius: 100px;
+}
+.Tokenplus{
+  max-width: 32px;
+  height: 32px;
+}
+.Glyph{
+  max-width: 245px;
+}
+.AuditBG{
+  background: #141403;
+}
+.Glyph_paddings{
+  padding-top: 77px;
+  padding-bottom: 84px;
+}
+.yellow_line{
+  background: #FFF624;
+  height: 1px;
+  opacity: 30%;
+}
+.YellowSliderBox{
+  padding: 40px 15px;
+  background: #FFFFFF14;
+  position: relative;
+  z-index: 1;
+  border-radius: 16px;
+  border: 1px solid #FFF62466;
+}
+
+.slider_box {
+  padding: 23px 36px;
+  max-width: 267px;
+  border-radius: 7px;
+  margin-right: 32px;
+}
+.roadmapBG{
+  background-image: url(./assets/images//webp/Roadmapbg.webp);
+  background-size: cover;
+  background-position:  center;
+}
+.Phase_card{
+  min-height: 328px;
+  height:fit-content;
+  background: #FFFFFF14;
+  position: relative;
+  z-index: 2;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.Phase_card::after{
+  z-index: -1;
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  padding: 1px;
+  background: linear-gradient(153.46deg, rgba(255, 246, 36, 0.4) -9.68%, rgba(255, 246, 36, 0) 119.9%);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+.list_style{
+  list-style-type: disc !important;
+}
+.Phase1botmimg{
+  bottom: -17%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.Phase2botmimg{
+  bottom: -11%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.Phase3botmimg{
+  bottom: -21%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.socialcard{
+  padding: 50px 58px 40px;
+  background: #FFFFFF0A;
+max-width: 840px;
+position: relative;
+z-index: 2;
+}
+.socialcard::after{
+  z-index: -1;
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  padding: 1px;
+  background: linear-gradient(153.46deg, rgba(255, 246, 36, 0.4) -9.68%, rgba(255, 246, 36, 0) 119.9%);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+.SocialLink{
+  border-radius: 100px;
+  height: 38px;
+  padding: 8px 6px;
+  max-width: 38px;
+  border: 0.66px solid #F1F1F129;
+  background: #191919;
+}
+/*==================== footer ============ */
+.footer_bg {
+  background: linear-gradient(180deg, #000000 12.27%, rgba(0, 0, 0, 0.205103) 82.49%, rgba(0, 0, 0, 0) 100%);
+}
+.footer_line{
+  height: 1px;
+  opacity: 20%;
+  background: #FFF624;
+}
+/*================ accordion======================== */
+.accordionbg{
+  background: #FFF62414;
+}
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+}
+
+.accordion-item {
+  border: 1px solid #FFFFFF3D;
+  background-color: #FFFFFF14;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.accordion-item {
+  background-color: #FFFFFF14 !important;
+  border: 1px solid #FFFFFF3D !important;
+  border-radius: 8px !important;
+}
+
+.accordion-button {
+  background-color: transparent !important;
+}
+
+.accordion-button {
+  padding: 12px 24px 12px 12px !important;
+}
+
+.accordion-body {
+  padding: 0px 0px 12px 12px !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("./assets/images/webp/topicon.png") !important;
+}
+
+.accordion-button::after {
+  background-image: url("./assets/images/webp/topicon.png") !important;
+}
 
 
 
 
 
 /*========================= max-widths========================= */
-.max_width_626{
+.max_width_626 {
   max-width: 626px;
 }
+.max_width_510{
+  max-width: 510px;
+}
+.max_width_702 {
+  max-width: 702px;
+}
+.max_width_776 {
+  max-width: 776px;
+}
+.max_width_758{
+  max-width: 758px;
+}
+.max_width_810 {
+  max-width: 810px;
+}
+.max_width_475{
+  max-width: 475px;
+}
+.max_width_254 {
+  max-width: 254px;
+}
+.max_width_800{
+  max-width: 800px;
+}
+.max_width_180{
+  max-width: 180px ;
+}
 /*=============== gap ================== */
-.gap_12{
+.gap_12 {
   gap: 12px;
 }
-
+.gap_10{
+  gap: 10px;
+}
+.gap_14 {
+  gap: 14px;
+}
+.gap_20{
+  gap: 20px;
+}
+.gap_32{
+  gap: 32px;
+}
 
 
 /*=================== margin padding ================== */
-.margin_top_20{
+.mx_28 {
+  margin-left: 28px;
+  margin-right: 28px;
+}
+
+.margin_top_20 {
   margin-top: 20px;
+}
+.margin_top_32 {
+  margin-top: 32px;
+}
+.margin_top_12 {
+margin-top: 12px;
+}
+.margin_top_40{
+  margin-top: 40px;
+}
+.margin_bottom_26{
+  margin-bottom: 26px;
+}
+  .contract_paddings{
+    padding-top: 52px;
+    padding-bottom: 52px;
+  }
+.aboutpadding_top{
+  padding-top: 50px;
+}
+.token_padding_top{
+  padding-top: 40px;
+}
+.margin_top_60{
+  margin-top: 60px;
+}
+.Glyph_padding_bottom{
+  padding-bottom: 77px;
+}
+.accord_padding_top{
+  padding-top: 47px;
+}
+.accord_padding_bottom{
+  padding-bottom: 47px;
+}
+.padding_top_100{
+  padding-top: 50px;
+}
+
+.socail_paddings{
+  padding-top: 52px;
+  padding-bottom: 34px;
+}
+.footer_padding_top{
+  padding-top: 50px;
+}
+@media (min-width:575.9px) {
+ 
+}
+@media (min-width:767.9px) {
+  .Phase_card{
+    max-width: 300px;
+  }
+  .contract_paddings{
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+  .token_padding_top{
+    padding-top: 74px;
+  }
+  .aboutpadding_top{
+    padding-top: 80px;
+  }
+  .accord_padding_top{
+    padding-top: 97px;
+  }
+  .accord_padding_bottom{
+    padding-bottom: 97px;
+  }
+  .socail_paddings{
+    padding-top: 124px;
+    padding-bottom: 34px;
+  }
+  .footer_padding_top{
+    padding-top: 120px;
+  }
+  .token_Card{
+    padding: 32px 75px;
+  }
+}
+@media (min-width:991.9px) {
+  .Aboutdino{
+    top: 52%;
+    right: 18%;
+  }
+  .Roadmaptradeimg{
+    margin-top: -18%;
+    max-width: 1440px;
+  }
+  .phase1padding_top{
+    padding-top: 184px;
+  }
+  .phase2padding_top{
+    padding-top: 78px;
+  }
+  .padding_top_100{
+    padding-top: 100px;
+  }
+  .contract_paddings{
+    padding-top: 152px;
+    padding-bottom: 152px;
+  }
+  .token_padding_top{
+    padding-top: 124px;
+  }
+  .aboutpadding_top{
+    padding-top: 100px;
+  }
+  .accord_padding_top{
+    padding-top: 97px;
+  }
+  .accord_padding_bottom{
+    padding-bottom: 97px;
+  }
+  .socail_paddings{
+    padding-top: 124px;
+    padding-bottom: 34px;
+  }
+  .footer_padding_top{
+    padding-top: 120px;
+  }
+  .token_Card{
+    padding: 32px 75px;
+  }
+}
+@media (min-width:1535.9px) {
+  .Roadmaptradeimg{
+    margin-top: -14%;
+    max-width: 1440px;
+  }
+}
+
+
+@media (min-width:1440px) and (max-width:1920px) {
+  .max_width_1140{
+    max-width: 1140px !important;
+  }
+}
+@media (min-width:1919.9px) {
+  .Roadmaptradeimg{
+    margin-top: -11%;
+    max-width: 1440px;
+  }
 }
