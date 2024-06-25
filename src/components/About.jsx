@@ -1,17 +1,17 @@
 import React from 'react'
 import { Row, Col, Container } from 'react-bootstrap'
-import Flatcoin from '../assets/images/webp/Flatcoin.png'
-import Tharasis from '../assets/images/webp/Tharasis.png'
-import Etherium from '../assets/images/webp/Etherium.png'
-import VenusBNB from '../assets/images/webp/VenusBNB.png'
-import Gradborder from '../assets/images/webp/gradborder.png'
-import Aboutdino from '../assets/images/webp/Aboutdino.png'
-import Dotted from '../assets/images/webp/Dotted.svg'
-import Clock from '../assets/images/webp/Clock.svg'
+import Flatcoin from '../assets/images/webp/Flatcoin.webp'
+import Tharasis from '../assets/images/webp/Tharasis.webp'
+import Etherium from '../assets/images/webp/Etherium.webp'
+import VenusBNB from '../assets/images/webp/VenusBNB.webp'
+import Gradborder from '../assets/images/webp/gradborder.webp'
+import Aboutdino from '../assets/images/webp/Aboutdino.webp'
+import Dotted from '../assets/images/svg/Dotted.svg'
+import Clock from '../assets/images/svg/Clock.svg'
 import BarIcon from '../assets/images/webp/BarIcon.webp'
 import Yellowline from '../assets/images/webp/yellowline.webp'
 import Whiteline from '../assets/images/webp/whiteline.webp'
-import Ellipse1R from '../assets/images/webp/Ellipse1R.png'
+import Ellipse1R from '../assets/images/webp/Ellipse1R.webp'
 const { useState, useEffect } = React;
 const About = () => {
     const [countdownDate, setCountdownDate] = useState(new Date('8 /25/2024').getTime());
@@ -49,7 +49,7 @@ const About = () => {
       }
     };
   return (
-   <section className=' bg-black position-relative' id='about'>
+   <section className=' bg-black position-relative section_margin' id='about'>
     <div className=" position-absolute Ellipse1R z-1">
         <img src={Ellipse1R} alt=" Ellipse1R" className=' w-100' />
     </div>
@@ -60,7 +60,7 @@ const About = () => {
         <div className="AboutCardbg mx-auto z-1">
         <div className="AboutCard z-1">
             <Row className=" d-flex justify-content-between z-1 flex-column-reverse flex-lg-row">
-             <Col lg={5} className=' d-flex justify-content-center mt-3 mt-lg-0'>
+             <Col lg={5} className=' d-flex justify-content-center mt-3 mt-lg-0' data-aos="zoom-in-right" >
              <div className=" d-flex flex-column z-1">
                     <div className=" d-flex align-items-center justify-content-evenly max_width_254">
                         <div className=" d-flex flex-column">
@@ -90,7 +90,7 @@ const About = () => {
                     <button className='buy_btn font_sm line_height_xmd fw-bold font_Manrope'>Buy Now</button>
                 </div>
              </Col>
-              <Col lg={7} className=' d-flex justify-content-center'>
+              <Col lg={7} className=' d-flex justify-content-center' data-aos="zoom-in-left">
               <div className=" d-flex flex-column max_width_404">
                 <div className="d-flex  justify-content-between">
                   <div className="d-flex flex-column">
@@ -145,7 +145,7 @@ const About = () => {
             </Row>
         </div>
         </div>    
-        <div className=" d-flex flex-column align-items-center justify-content-center z-1">
+        <div className=" d-flex flex-column align-items-center justify-content-center z-1" data-aos="zoom-out-down">
             <h2 className=' mb-0 font_xl line_height_xl fw-semibold light_white aboutpadding_top z-1'>About <span className=' color_yellow fw-bold'>$CLAIR</span></h2>
             <p className=' mb-0 color_gray font_Manrope fw-normal font_sm line_height_xmd max_width_776 z-1 text-center mt-3'>As you navigate through the avatars, you'll find each one has a unique voice, bringing laughter and a touch of sarcasm to the otherwise serious discussions in the crypto space.</p>
             <p className=' mb-0 color_gray font_Manrope fw-normal font_sm line_height_xmd max_width_776 z-1 text-center margin_top_12'>In a landscape where tensions can run high, Baby Sinclair’s memes serve as a reminder that, sometimes, the best way to confront challenges is with a good laugh.</p>

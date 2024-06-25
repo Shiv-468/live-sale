@@ -1,13 +1,13 @@
 import React from 'react'
 import { Container, NavLink } from 'react-bootstrap'
-import Ellipse4L from '../assets/images/webp/Ellipse4L.png'
+import Ellipse4L from '../assets/images/webp/Ellipse4L.webp'
 const Footer = () => {
   return (
-    <footer className=' bg_black position-relative'>
+    <footer className=' bg_black position-relative section_margin'>
       <div className=" position-absolute Ellipse4L">
         <img src={Ellipse4L} alt="Ellipse4L" className=' w-100' />
       </div>
-      <Container className='footer_padding_top max_width_1140'>
+      <Container className='footer_padding_top max_width_1140 '>
         <div className=" d-flex flex-column align-items-center justify-content-center">
           <h2 className=' mb-0 font_Manrope color_yellow font_2xl line_height_2xl fw-semibold text-center'>$CLAIR</h2>
           <p className=' mb-0 margin_top_20 color_gray max_width_626 text-center font_sm line_height_xmd font_Manrope fw-normal'>In this meme-driven world, laughter is not just a reaction; it's a powerful tool for chang

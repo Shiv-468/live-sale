@@ -28,7 +28,7 @@
 }
 
 .HeroBG {
-  background-image: url(./assets/images/webp/HeroBG.png);
+  background-image: url(./assets/images/webp/HeroBG.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -64,7 +64,7 @@
 }
 
 .BottomBgImg {
-  background-image: url(./assets/images/webp/bgBottomImg.png);
+  background-image: url(./assets/images/webp/bgBottomImg.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -76,7 +76,7 @@
 }
 
 .AboutCardbg {
-  background-image: url(./assets/images/webp/Aboutcardbg.png);
+  background-image: url(./assets/images/webp/Aboutcardbg.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -128,7 +128,7 @@
 }
 
 .ContractBG {
-  background-image: url("./assets/images/webp/ContractBG.png"), linear-gradient(#141403, #141403);
+  background-image: url("./assets/images/webp/ContractBG.webp"), linear-gradient(#141403, #141403);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -156,7 +156,7 @@
 }
 
 .TokenBG {
-  background-image: url("./assets/images/webp/TokenomicsBG.png"), linear-gradient(180deg, #000000 14.61%, rgba(0, 0, 0, 0.205103) 82.49%, rgba(0, 0, 0, 0) 100%);
+  background-image: url("./assets/images/webp/TokenomicsBG.webp"), linear-gradient(180deg, #000000 14.61%, rgba(0, 0, 0, 0.205103) 82.49%, rgba(0, 0, 0, 0) 100%);
   background-color: var(--black);
   background-repeat: no-repeat;
   background-size: cover;
@@ -428,7 +428,45 @@
 .FooterLink:hover::after {
   width: 100%;
 }
+.LangDropdown{
+  background: transparent;
+  border: none;
+}
+.LangDropdown:hover{
+  background: transparent;
+}
+.dropdown-toggle {
+  padding: 0 !important;
+}
+.dropdown-toggle::after {
+  width: 10px;
+  height: 5px;
+  margin-left: 18px;
+}
+.btn.show{
+  background: transparent;
+}
+.dropdown-toggle::after {
+  background-image: url("./assets/images/svg/dropdown.svg") !important;
+  border: none !important;
+  width: 18px;
+  height: 18px;
+  margin-left: 12px !important;
+}
 
+.dropdown-menu[data-bs-popper] {
+  top: 100%;
+  left: -50% !important;
+  margin-top: var(--bs-dropdown-spacer);
+}
+
+.dropdown-menu {
+  --bs-dropdown-min-width: 6rem !important;
+  --bs-btn-active-shadow: none !important;
+}
+.section_margin{
+  margin-top: -1px;
+}
 /*==================== footer ============ */
 .footer_bg {
   background: linear-gradient(180deg, #000000 12.27%, rgba(0, 0, 0, 0.205103) 82.49%, rgba(0, 0, 0, 0) 100%);
@@ -482,11 +520,11 @@
 }
 
 .accordion-button:not(.collapsed)::after {
-  background-image: url("./assets/images/webp/topicon.png") !important;
+  background-image: url("./assets/images/webp/topicon.webp") !important;
 }
 
 .accordion-button::after {
-  background-image: url("./assets/images/webp/topicon.png") !important;
+  background-image: url("./assets/images/webp/topicon.webp") !important;
 }
 
 /*========================= max-widths========================= */
@@ -747,7 +785,9 @@
     top: 52%;
     right: 18%;
   }
-
+.mr_28{
+  margin-right: 28px;
+}
   .gap_32 {
     gap: 32px;
   }
@@ -869,5 +909,8 @@
   .Roadmaptradeimg {
     margin-top: -11%;
     max-width: 1440px;
+  }
+  .next_section{
+    right: 25%;
   }
 }

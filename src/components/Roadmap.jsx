@@ -1,14 +1,14 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import Roadmaptrade from '../assets/images/webp/Roadmap.png'
-import Phase1botm from '../assets/images/webp/phase1botm.png'
-import Phase2botm from '../assets/images/webp/phase2botm.png'
-import Phase3botm from '../assets/images/webp/phase3botm.png'
-import Ellipse3L from '../assets/images/webp/Ellipse3L.png'
-import Ellipse4R from '../assets/images/webp/Ellipse4R.png'
+import Roadmaptrade from '../assets/images/webp/Roadmap.webp'
+import Phase1botm from '../assets/images/webp/phase1botm.webp'
+import Phase2botm from '../assets/images/webp/phase2botm.webp'
+import Phase3botm from '../assets/images/webp/phase3botm.webp'
+import Ellipse3L from '../assets/images/webp/Ellipse3L.webp'
+import Ellipse4R from '../assets/images/webp/Ellipse4R.webp'
 const Roadmap = () => {
   return (
-   <section className=' roadmapBG pb-4 position-relative'>
+   <section className=' roadmapBG pb-4 position-relative section_margin'>
     <div className=" position-absolute Ellipse3L z-1">
       <img src={Ellipse3L} alt="Ellipse3L" className=' w-100' />
     </div>
@@ -18,7 +18,7 @@ const Roadmap = () => {
     <h2 className=' mb-0 light_white font_xl line_height_xl fw-semibold font_Manrope text-center'>Roadmap</h2>
     <Container className='max_width_1140'>
       <Row className=' padding_top_100 justify-content-center'>
-        <Col md={6} lg={4} className=' d-flex justify-content-center justify-content-md-end phase1padding_top'>
+        <Col md={6} lg={4} className=' d-flex justify-content-center justify-content-md-end phase1padding_top' data-aos="zoom-in">
         <div className="Phase_card w-100 position-relative">
         <img src={Phase1botm} alt="Phase1botm" className=' position-absolute Phase1botmimg d-none d-lg-block' />
           <h4 className=' mb-0 font_xlg line_height_lg font_Manrope fw-medium text-white'>Phase 1</h4>
@@ -33,7 +33,7 @@ const Roadmap = () => {
           </ul>
         </div>
         </Col>
-        <Col md={6} lg={4} className=' d-flex justify-content-center justify-content-md-start justify-content-xl-center phase2padding_top mt-4 mt-md-0'>
+        <Col md={6} lg={4} className=' d-flex justify-content-center justify-content-md-start justify-content-xl-center phase2padding_top mt-4 mt-md-0' data-aos="zoom-in">
         <div className="Phase_card w-100 position-relative">
         <img src={Phase2botm} alt="Phase1botm" className=' position-absolute Phase2botmimg d-none d-lg-block' />
           <h4 className=' mb-0 font_xlg line_height_lg font_Manrope fw-medium text-white'>Phase 2</h4>
@@ -48,7 +48,7 @@ const Roadmap = () => {
           </ul>
         </div>
         </Col>
-        <Col md={6} lg={4} className=' d-flex justify-content-center justify-content-xl-start mt-4 mt-lg-0'>
+        <Col md={6} lg={4} className=' d-flex justify-content-center justify-content-xl-start mt-4 mt-lg-0' data-aos="zoom-in">
         <div className="Phase_card w-100 position-relative">
         <img src={Phase3botm} alt="Phase1botm" className=' position-absolute Phase3botmimg d-none d-lg-block' />
           <h4 className=' mb-0 font_xlg line_height_lg font_Manrope fw-medium text-white'>Phase 3</h4>
@@ -63,7 +63,7 @@ const Roadmap = () => {
         </Col>
       </Row>
     </Container>
-    <div className=" d-flex Roadmaptradeimg mx-auto">
+    <div className=" d-flex Roadmaptradeimg mx-auto" data-aos="zoom-in">
         <img src={Roadmaptrade} alt="Roadmap" className=' w-100 d-none d-lg-block' />
       </div>
    </section>

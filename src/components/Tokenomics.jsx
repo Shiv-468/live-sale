@@ -1,20 +1,20 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
-import Iconparkdot from '../assets/images/webp/icon_park_dot.png'
-import TokenImg from '../assets/images/webp/TokenImg.png'
-import TokenFox from '../assets/images/webp/tokenfox.png'
-import Tokenplus from '../assets/images/webp/tokenplus.png'
-import Tokenbaby from '../assets/images/webp/tokenbaby.png'
-import Ellipse2R from '../assets/images/webp/Ellipse2R.png'
+import Iconparkdot from '../assets/images/webp/icon_park_dot.webp'
+import TokenImg from '../assets/images/webp/TokenImg.webp'
+import TokenFox from '../assets/images/webp/tokenfox.webp'
+import Tokenplus from '../assets/images/webp/tokenplus.webp'
+import Tokenbaby from '../assets/images/webp/tokenbaby.webp'
+import Ellipse2R from '../assets/images/webp/Ellipse2R.webp'
 const Tokenomics = () => {
   return (
-   <section className=' TokenBG token_padding_top token_padding_bottom position-relative'>
+   <section className=' TokenBG token_padding_top token_padding_bottom position-relative section_margin'>
     <div className=" position-absolute Ellipse2R z-1">
         <img src={Ellipse2R} alt="Ellipse2R" className=' w-100' />
     </div>
     <Container className='max_width_1140 z-3'>
         <Row>
-            <Col md={6} className=' d-flex flex-column z-3'>
+            <Col md={6} className=' d-flex flex-column z-3' data-aos="fade-right">
             <h2 className=' mb-0 font_Manrope font_xl line_height_xl fw-semibold light_white'>Tokenomics</h2>
             <div className=" d-flex gap-3 align-items-center mt-3 mb-4">
                 <p className=' mb-0 font_Manrope font_md line_height_xlg fw-normal white_smoke'>Baby Sinclair</p>
@@ -55,11 +55,11 @@ const Tokenomics = () => {
                 <p className=' mb-0 white_smoke font_sm line_height_xmd font_Manrope fw-normal margin_top_12'>Rewards and burns</p>
             </div>
             </Col>
-            <Col md={6} className=' d-flex align-items-center justify-content-center justify-content-lg-end'>
+            <Col md={6} className=' d-flex align-items-center justify-content-center justify-content-lg-end' data-aos="fade-left">
             <img src={TokenImg} alt="TokenImg" className=' w-100 TokenImg' />
             </Col>
         </Row>
-        <div className=" token_Card d-flex align-items-center flex-wrap justify-content-center justify-content-xl-between margin_top_60">
+        <div className=" token_Card d-flex align-items-center flex-wrap justify-content-center justify-content-xl-between margin_top_60" data-aos="flip-up">
             <div className=" d-flex gap_20 align-items-center">
                 <div className="babydiv w-100 d-flex align-items-center justify-content-center">
                     <img src={TokenFox} alt="TokenFox" className=' w-100 TokenFox' />
