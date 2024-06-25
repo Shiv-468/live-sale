@@ -10,17 +10,14 @@
 }
 
 .next_section {
-  display: inline-block;
+position: absolute;
   padding: 10px 4px;
   border-radius: 4px;
+  z-index: 1 !important;
   border-bottom: 1px solid #FFFFFF17;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.04) 3.33%, rgba(255, 255, 255, 0) 69.17%);
   bottom: 12%;
   right: 2%;
-}
-
-.min_h_820 {
-  min-height: 820px;
 }
 
 .font_Manrope {
@@ -441,9 +438,12 @@
 .LangDropdown{
   background: transparent;
   border: none;
+  display: flex; align-items: center;
+  justify-content: center;
 }
 .LangDropdown:hover{
   background: transparent;
+
 }
 .dropdown-toggle {
   padding: 0 !important;
@@ -864,7 +864,7 @@
     background: black;
     min-height: 100vh;
     position: fixed;
-    z-index: 99;
+    z-index: 100 !important;
     width: 100%;
   }
 
@@ -875,8 +875,8 @@
   .bar {
     width: 26px;
     height: 3px;
-    z-index: 99;
-    background: white;
+    z-index: 100 !important;
+    background: var(--yellow);
     transition: all 400ms linear;
   }
 
@@ -904,7 +904,11 @@
   }
 
 }
-
+@media (min-width:1199.9px) {
+  .min_h_820 {
+    min-height: 820px;
+  }
+}
 @media (min-width:1535.9px) {
   .Roadmaptradeimg {
     margin-top: -16%;
