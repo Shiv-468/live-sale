@@ -3,7 +3,7 @@ import { Container, NavLink } from 'react-bootstrap'
 import Ellipse4L from '../assets/images/webp/Ellipse4L.webp'
 const Footer = () => {
   return (
-    <footer className=' bg_black position-relative section_margin'>
+    <footer className=' bg_black position-relative section_margin footerBG'>
       <div className=" position-absolute Ellipse4L">
         <img src={Ellipse4L} alt="Ellipse4L" className=' w-100' />
       </div>

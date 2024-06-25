@@ -26,10 +26,10 @@ const HeroSection = () => {
         <Container className='max_width_1140'>
        <div className=" d-flex align-items-center justify-content-between">
        <div className=" d-flex gap_12">
-         <div className="Logo">
+         <div className="Logo cursor_pointer">
             <img src={Logo} alt="logo" className=' w-100 ' />
           </div>
-          <p className=' mb-0 font_xlg line_height_lg fw-semibold color_yellow font_Manrope'>$CLAIR</p>
+          <p className=' mb-0 font_xlg line_height_lg fw-semibold color_yellow font_Manrope cursor_pointer'>$CLAIR</p>
          </div>
         <Nav className={`${data ? "navShow" : "navhide"} d-flex align-items-center nav_gap mobile_view`}>
           <NavLink to ="#" className='p-0 font_sm fw-medium line_height_xmd font_Manrope white_smoke'>About</NavLink>

@@ -4,11 +4,15 @@ import DiscordImg from '../assets/images/svg/Discord.svg'
 import Twitter from '../assets/images/svg/twitter.svg'
 import Ellipse5R from '../assets/images/webp/Ellipse5R.webp'
 import Telegram from '../assets/images/svg/telegram.svg'
+import SocailsDino from '../assets/images/webp/SocailsDino.webp'
 const Socials = () => {
   return (
     <section className=' bg-black socail_paddings position-relative section_margin'>
             <div className=" position-absolute Ellipse5R z-1">
       <img src={Ellipse5R} alt=" Ellipse5R" className=' w-100' />
+    </div>
+    <div className=" position-absolute SocailsDino z-0">
+        <img src={SocailsDino} alt="SocailsDino" className=' w-100' />
     </div>
         <Container className='max_width_1140 z-2'>
             <div className="socialcard mx-auto d-flex flex-column align-items-center justify-content-center z-2">
