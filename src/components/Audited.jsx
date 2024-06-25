@@ -12,6 +12,7 @@ import Slider3 from '../assets/images/webp/Slider3.png'
 import Slider4 from '../assets/images/webp/Slider4.png'
 import Slider5 from '../assets/images/webp/Slider5.png'
 import Slider6 from '../assets/images/webp/Slider6.png'
+import Ellipse3R from '../assets/images/webp/Ellipse3R.png'
 const Audited = () => {
   var settings = {
     dots: false,
@@ -23,14 +24,17 @@ const Audited = () => {
     arrows: false
   };
   return (
-    <section className=' AuditBG '>
+    <section className=' AuditBG  position-relative'>
+      <div className=" position-absolute Ellipse3R z-1">
+        <img src={Ellipse3R} alt="Ellipse3R" className=' w-100' />
+      </div>
       <img src={UnionAuditTop} alt="UnionAuditTop" className=' w-100' />
       <Container className='max_width_1140'>
         <Row className='Glyph_paddings'>
           <Col md={6} className=' d-flex justify-content-center'>
             <img src={Glyph} alt="Glyph" className=' w-100 Glyph' />
           </Col>
-          <Col md={6} className=' d-flex flex-column align-items-start justify-content-center'>
+          <Col md={6} className=' d-flex flex-column align-items-start justify-content-center  mt-4 mt-md-0'>
             <div className=" d-flex flex-column gap_10">
               <p className=' mb-0 font_Manrope white_smoke font_xmd line_height_md fw-normal'>Rest easy knowing that $CLAIR is </p>
               <h3 className=' mb-0 font_xlg line_height_lg font_Manrope color_yellow fw-semibold'>Fully Audited and 100% Secure.</h3>
@@ -40,11 +44,11 @@ const Audited = () => {
           </Col>
         </Row>
         <div className="yellow_line w-100"></div>
-        <Row className=' Glyph_padding_bottom pt-5'>
-          <Col md={6} className=' d-flex align-items-center justify-content-end'>
+        <Row className=' Glyph_padding_bottom pt-5 flex-column-reverse flex-md-row'>
+          <Col md={6} className=' d-flex align-items-center justify-content-end mt-4 mt-md-0'>
             <div className=" d-flex flex-column gap-3 max_width_475">
-              <h3 className=' mb-0 font_xlg line_height_lg font_Manrope fw-semibold light_white'>Listing on <span className=' color_yellow'>Major Exchanges</span></h3>
-              <p className=' mb-0 font_xmd line_height_md font_Manrope fw-normal white_smoke'>Baby Sinclair’s Team is in action to secure the <span className=' color_yellow'>$CLAIR</span> listing on major exchanges. Exciting milestones ahead.</p>
+              <h3 className=' mb-0 font_xlg line_height_lg font_Manrope fw-semibold light_white text-center text-md-start'>Listing on <span className=' color_yellow'>Major Exchanges</span></h3>
+              <p className=' mb-0 font_xmd line_height_md font_Manrope fw-normal white_smoke text-center text-md-start'>Baby Sinclair’s Team is in action to secure the <span className=' color_yellow'>$CLAIR</span> listing on major exchanges. Exciting milestones ahead.</p>
             </div>
           </Col>
           <Col md={6}>

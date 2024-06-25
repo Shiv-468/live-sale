@@ -2,14 +2,22 @@ import React from 'react'
 import { Accordion, Container } from 'react-bootstrap'
 import UnionAccordiontop from '../assets/images/webp/UnionAccordiontop.png'
 import UnionAccordionbotm from '../assets/images/webp/UnionAccordionbotm.png'
+import Qmark1 from '../assets/images/webp/Qmark1.png'
+import Qmark2 from '../assets/images/webp/Qmark2.png'
 const Questions = () => {
   return (
-    <section className=' bg-black'>
-        <div className="accordionbg ">
+    <section className=' bg-black position-relative'>
+        <div className=" position-absolute Qmark1 z-0 d-none d-md-block">
+            <img src={Qmark1} alt="Qmark1" className=' w-100' />
+        </div>
+        <div className=" position-absolute Qmark2 z-0 d-none d-md-block">
+            <img src={Qmark2} alt="Qmark2" className=' w-100' />
+        </div>
+        <div className="accordionbg">
         <img src={UnionAccordiontop} alt="UnionAccordiontop" className=' w-100' />
-        <Container className='max_width_1140'>
-            <h2 className=' mb-0 light_white font_Manrope font_xl line_height_xl fw-semibold text-center accord_padding_top'>Frequently Asked <span className=' color_yellow'>Questions</span></h2>
-    <div className="margin_top_60 max_width_800 mx-auto accord_padding_bottom z-1 position-relative">
+        <Container className='max_width_1140 z-2'>
+            <h2 className=' mb-0 z-2 light_white font_Manrope font_xl line_height_xl fw-semibold text-center accord_padding_top'>Frequently Asked <span className=' color_yellow'>Questions</span></h2>
+    <div className="margin_top_60 z-2 max_width_800 mx-auto accord_padding_bottom z-1 position-relative">
                     <Accordion defaultActiveKey="0">
                         <Accordion.Item eventKey="0" data-aos="fade-up">
                             <Accordion.Header >

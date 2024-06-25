@@ -9,6 +9,16 @@
   box-sizing: border-box;
 }
 
+.next_section {
+  display: inline-block;
+  padding: 10px 4px;
+  border-radius: 4px;
+  border-bottom: 1px solid #FFFFFF17;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.04) 3.33%, rgba(255, 255, 255, 0) 69.17%);
+  bottom: 12%;
+  right: 2%;
+}
+
 .min_h_820 {
   min-height: 820px;
 }
@@ -39,16 +49,32 @@
   height: 47px;
 }
 
+.sclair_btn {
+  max-width: 157px;
+  height: 48px;
+  border-radius: 10px;
+  border: 1px solid var(--yellow);
+  transition: all 400ms ease-in-out;
+}
+
+.sclair_btn:hover {
+  background: var(--light-white);
+  color: var(--black);
+  box-shadow: 0px 0px 10px 2px var(--light-white);
+}
+
 .BottomBgImg {
   background-image: url(./assets/images/webp/bgBottomImg.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-.Aboutdino{
-bottom: 0;
+
+.Aboutdino {
+  bottom: 0;
   right: 18%;
 }
+
 .AboutCardbg {
   background-image: url(./assets/images/webp/Aboutcardbg.png);
   background-size: cover;
@@ -61,7 +87,8 @@ bottom: 0;
 }
 
 .AboutCard {
-  padding: 40px;
+  padding: 30px;
+  background: #FFFFFF05;
 }
 
 .about_coinbox {
@@ -70,32 +97,49 @@ bottom: 0;
   background: #313131;
   border-radius: 5px;
 }
-.buy_btn{
+
+.buy_btn {
   max-width: 254px;
   height: 48px;
   border-radius: 10px;
   background: #FFF624;
   border: 0;
+  transition: all 400ms ease-in-out;
   margin-top: 32px;
 }
-.common_btn{
+
+.buy_btn:hover {
+  background: var(--light-white);
+  box-shadow: 0px 0px 10px 2px var(--light-white);
+}
+
+.common_btn {
   padding: 12px 24px;
   background: var(--yellow);
   border-radius: 10px;
   height: 48px;
   border: 1px solid transparent;
+  transition: all 400ms ease-in-out;
 }
-.ContractBG{
+
+.common_btn:hover {
+  background: var(--light-white);
+  box-shadow: 0px 0px 10px 2px var(--light-white);
+}
+
+.ContractBG {
   background-image: url("./assets/images/webp/ContractBG.png"), linear-gradient(#141403, #141403);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-.CopyDiv{
+
+.CopyDiv {
   background: #FFFFFF14;
-max-width: 587px;
+  max-width: 587px;
 }
-.CopyInput{
+
+.CopyInput {
   padding: 12px;
   background: #FFFFFF14;
   border-style: solid;
@@ -106,37 +150,45 @@ max-width: 587px;
   border-color: #FFFFFF3D;
   border-right: 1px;
 }
-.btn_transform{
+
+.btn_transform {
   margin-left: -9px;
 }
-.TokenBG{
-  background-image: url("./assets/images/webp/TokenomicsBG.png"),linear-gradient(180deg, #000000 14.61%, rgba(0, 0, 0, 0.205103) 82.49%, rgba(0, 0, 0, 0) 100%);
+
+.TokenBG {
+  background-image: url("./assets/images/webp/TokenomicsBG.png"), linear-gradient(180deg, #000000 14.61%, rgba(0, 0, 0, 0.205103) 82.49%, rgba(0, 0, 0, 0) 100%);
   background-color: var(--black);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-.sclairDiv{
+
+.sclairDiv {
   background: #FFFFFF0A;
   border: 1px solid #FFF6243D;
   border-radius: 6px;
 }
-.TokenImg{
+
+.TokenImg {
   max-width: 491px;
 }
-.TokenFox{
+
+.TokenFox {
   max-width: 68px;
 }
-.Tokenbaby{
+
+.Tokenbaby {
   max-width: 80px;
 }
-.token_Card{
+
+.token_Card {
   padding: 16px;
   background: #FFFFFF0F;
   border: 1px solid;
   border-radius: 16px;
 }
-.token_Card::after{
+
+.token_Card::after {
   z-index: -1;
   content: "";
   position: absolute;
@@ -149,35 +201,41 @@ max-width: 587px;
     linear-gradient(#FFFFFF0F 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
-
 }
-.babydiv{
+
+.babydiv {
   width: 122px !important;
   min-height: 122px;
   background: #191919;
   border-radius: 100px;
 }
-.Tokenplus{
+
+.Tokenplus {
   max-width: 32px;
   height: 32px;
 }
-.Glyph{
+
+.Glyph {
   max-width: 245px;
 }
-.AuditBG{
+
+.AuditBG {
   background: #141403;
 }
-.Glyph_paddings{
-  padding-top: 77px;
-  padding-bottom: 84px;
+
+.Glyph_paddings {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
-.yellow_line{
+
+.yellow_line {
   background: #FFF624;
   height: 1px;
   opacity: 30%;
 }
-.YellowSliderBox{
-  padding: 40px 15px;
+
+.YellowSliderBox {
+  padding: 30px 15px;
   background: #FFFFFF14;
   position: relative;
   z-index: 1;
@@ -189,16 +247,18 @@ max-width: 587px;
   padding: 23px 36px;
   max-width: 267px;
   border-radius: 7px;
-  margin-right: 32px;
+  margin-right: 16px;
 }
-.roadmapBG{
+
+.roadmapBG {
   background-image: url(./assets/images//webp/Roadmapbg.webp);
   background-size: cover;
-  background-position:  center;
+  background-position: center;
 }
-.Phase_card{
+
+.Phase_card {
   min-height: 328px;
-  height:fit-content;
+  height: fit-content;
   background: #FFFFFF14;
   position: relative;
   z-index: 2;
@@ -206,7 +266,7 @@ max-width: 587px;
   padding: 24px;
 }
 
-.Phase_card::after{
+.Phase_card::after {
   z-index: -1;
   content: "";
   position: absolute;
@@ -220,33 +280,39 @@ max-width: 587px;
   -webkit-mask-composite: xor;
   mask-composite: exclude;
 }
-.list_style{
+
+.list_style {
   list-style-type: disc !important;
 }
-.Phase1botmimg{
+
+.Phase1botmimg {
   bottom: -17%;
   left: 50%;
   transform: translateX(-50%);
 }
-.Phase2botmimg{
+
+.Phase2botmimg {
   bottom: -11%;
   left: 50%;
   transform: translateX(-50%);
 }
-.Phase3botmimg{
+
+.Phase3botmimg {
   bottom: -21%;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.socialcard{
-  padding: 50px 58px 40px;
+.socialcard {
+  padding: 40px 16px;
   background: #FFFFFF0A;
-max-width: 840px;
-position: relative;
-z-index: 2;
+  max-width: 840px;
+  position: relative;
+  border-radius: 16px;
+  z-index: 2;
 }
-.socialcard::after{
+
+.socialcard::after {
   z-index: -1;
   content: "";
   position: absolute;
@@ -260,27 +326,125 @@ z-index: 2;
   -webkit-mask-composite: xor;
   mask-composite: exclude;
 }
-.SocialLink{
+
+.SocialLink {
   border-radius: 100px;
   height: 38px;
+  width: 38px;
   padding: 8px 6px;
-  max-width: 38px;
   border: 0.66px solid #F1F1F129;
   background: #191919;
+  transition: all 400ms linear;
 }
+
+.SocialLink:hover {
+  border: 0.66px solid var(--yellow);
+}
+
+.timing_box {
+  width: 50px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #FFF62433;
+}
+
+.line-yellow {
+  top: -16px;
+  left: 26%;
+}
+
+.line-white {
+  top: -16px;
+  right: 5%;
+}
+
+.Ellipse1L {
+  bottom: -14%;
+}
+
+.Ellipse1R {
+  right: 0;
+  top: -8%;
+}
+
+.Ellipse2L {
+  bottom: -19%;
+}
+
+.Ellipse2R {
+  right: 0;
+  bottom: -17%;
+}
+
+.Ellipse3R {
+  right: 0;
+  bottom: -17%;
+  z-index: 1;
+}
+
+.Ellipse3L {
+  top: 4%;
+}
+
+.Ellipse4R {
+  right: 0;
+  bottom: -20%;
+}
+
+.Ellipse5R {
+  right: 0;
+  top: -50%;
+}
+
+.Ellipse4L {
+  top: -40%;
+}
+
+.Qmark1 {
+  top: 40%;
+  left: 3.5%;
+}
+
+.Qmark2 {
+  right: 1%;
+  top: 25%;
+}
+
+.FooterLink::after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  background: var(--light-white);
+  width: 0;
+  left: 0;
+  transition: all 300ms linear;
+  bottom: -3px;
+}
+
+.FooterLink:hover {
+  color: var(--gray2);
+}
+
+.FooterLink:hover::after {
+  width: 100%;
+}
+
 /*==================== footer ============ */
 .footer_bg {
   background: linear-gradient(180deg, #000000 12.27%, rgba(0, 0, 0, 0.205103) 82.49%, rgba(0, 0, 0, 0) 100%);
 }
-.footer_line{
+
+.footer_line {
   height: 1px;
   opacity: 20%;
   background: #FFF624;
 }
+
 /*================ accordion======================== */
-.accordionbg{
+.accordionbg {
   background: #FFF62414;
 }
+
 .accordion-button:focus {
   box-shadow: none !important;
 }
@@ -325,58 +489,78 @@ z-index: 2;
   background-image: url("./assets/images/webp/topicon.png") !important;
 }
 
-
-
-
-
 /*========================= max-widths========================= */
 .max_width_626 {
   max-width: 626px;
 }
-.max_width_510{
+
+.max_width_654 {
+  max-width: 654px;
+}
+
+.max_width_404 {
+  max-width: 404px;
+}
+
+.max_width_510 {
   max-width: 510px;
 }
+
 .max_width_702 {
   max-width: 702px;
 }
+
 .max_width_776 {
   max-width: 776px;
 }
-.max_width_758{
+
+.max_width_758 {
   max-width: 758px;
 }
+
 .max_width_810 {
   max-width: 810px;
 }
-.max_width_475{
+
+.max_width_475 {
   max-width: 475px;
 }
+
 .max_width_254 {
   max-width: 254px;
 }
-.max_width_800{
+
+.max_width_800 {
   max-width: 800px;
 }
-.max_width_180{
-  max-width: 180px ;
+
+.max_width_180 {
+  max-width: 180px;
 }
 /*=============== gap ================== */
 .gap_12 {
   gap: 12px;
 }
-.gap_10{
+
+.gap_10 {
   gap: 10px;
 }
+
 .gap_14 {
   gap: 14px;
 }
-.gap_20{
+
+.gap_20 {
   gap: 20px;
 }
-.gap_32{
-  gap: 32px;
+
+.gap_32 {
+  gap: 12px;
 }
 
+.nav_gap {
+  gap: 32px;
+}
 
 /*=================== margin padding ================== */
 .mx_28 {
@@ -387,145 +571,302 @@ z-index: 2;
 .margin_top_20 {
   margin-top: 20px;
 }
+
 .margin_top_32 {
-  margin-top: 32px;
+  margin-top: 16px;
 }
+
 .margin_top_12 {
-margin-top: 12px;
+  margin-top: 12px;
 }
-.margin_top_40{
+
+.margin_top_40 {
   margin-top: 40px;
 }
-.margin_bottom_26{
+
+.margin_bottom_26 {
   margin-bottom: 26px;
 }
-  .contract_paddings{
-    padding-top: 52px;
-    padding-bottom: 52px;
-  }
-.aboutpadding_top{
-  padding-top: 50px;
+
+.contract_paddings {
+  padding-top: 52px;
+  padding-bottom: 52px;
 }
-.token_padding_top{
-  padding-top: 40px;
-}
-.margin_top_60{
-  margin-top: 60px;
-}
-.Glyph_padding_bottom{
-  padding-bottom: 77px;
-}
-.accord_padding_top{
-  padding-top: 47px;
-}
-.accord_padding_bottom{
-  padding-bottom: 47px;
-}
-.padding_top_100{
+
+.aboutpadding_top {
   padding-top: 50px;
 }
 
-.socail_paddings{
+.token_padding_top {
+  padding-top: 40px;
+}
+
+.margin_top_60 {
+  margin-top: 60px;
+}
+
+.Glyph_padding_bottom {
+  padding-bottom: 47px;
+}
+
+.accord_padding_top {
+  padding-top: 47px;
+}
+
+.accord_padding_bottom {
+  padding-bottom: 47px;
+}
+
+.padding_top_100 {
+  padding-top: 50px;
+}
+
+.aboutpadding_bottom {
+  padding-bottom: 62px;
+}
+
+.token_padding_bottom {
+  padding-bottom: 46px;
+}
+
+.socail_paddings {
   padding-top: 52px;
   padding-bottom: 34px;
 }
-.footer_padding_top{
+
+.footer_padding_top {
   padding-top: 50px;
 }
-@media (min-width:575.9px) {
- 
+
+.pr_24 {
+  padding-right: 24px;
 }
+
+.pt_6 {
+  padding-top: 6px;
+}
+
+.pb_12 {
+  padding-bottom: 12px;
+}
+
+@media (min-width:575.9px) {
+  .Glyph_paddings {
+    padding-top: 77px;
+    padding-bottom: 84px;
+  }
+
+  .margin_top_32 {
+    margin-top: 32px;
+  }
+
+  .gap_32 {
+    gap: 22px;
+  }
+
+  .AboutCard {
+    padding: 40px;
+  }
+
+  .w_sm_80 {
+    width: 80px;
+  }
+
+  .line-yellow {
+    top: -12px;
+    left: 130px;
+  }
+
+  .line-white {
+    top: -12px;
+    right: 12px;
+  }
+}
+
 @media (min-width:767.9px) {
-  .Phase_card{
+  .Glyph_padding_bottom {
+    padding-bottom: 77px;
+  }
+
+  .slider_box {
+    margin-right: 32px;
+  }
+
+  .YellowSliderBox {
+    padding: 40px 15px;
+  }
+
+  .gap_32 {
+    gap: 25px;
+  }
+
+  .Phase_card {
     max-width: 300px;
   }
-  .contract_paddings{
-    padding-top: 90px;
-    padding-bottom: 90px;
+
+  .contract_paddings {
+    padding-top: 86px;
+    padding-bottom: 85px;
   }
-  .token_padding_top{
+
+  .token_padding_top {
     padding-top: 74px;
   }
-  .aboutpadding_top{
+
+  .aboutpadding_top {
     padding-top: 80px;
   }
-  .accord_padding_top{
+
+  .accord_padding_top {
     padding-top: 97px;
   }
-  .accord_padding_bottom{
+
+  .accord_padding_bottom {
     padding-bottom: 97px;
   }
-  .socail_paddings{
+
+  .socail_paddings {
     padding-top: 124px;
-    padding-bottom: 34px;
   }
-  .footer_padding_top{
+
+  .footer_padding_top {
     padding-top: 120px;
   }
-  .token_Card{
+
+  .token_Card {
     padding: 32px 75px;
   }
+
+  .token_padding_bottom {
+    padding-bottom: 96px;
+  }
 }
+
 @media (min-width:991.9px) {
-  .Aboutdino{
+  .Aboutdino {
     top: 52%;
     right: 18%;
   }
-  .Roadmaptradeimg{
-    margin-top: -18%;
-    max-width: 1440px;
+
+  .gap_32 {
+    gap: 32px;
   }
-  .phase1padding_top{
+
+  .Roadmaptradeimg {
+    margin-top: -20%;
+    max-width: 1440px;
+    padding-bottom: 20px;
+  }
+
+  .phase1padding_top {
     padding-top: 184px;
   }
-  .phase2padding_top{
+
+  .phase2padding_top {
     padding-top: 78px;
   }
-  .padding_top_100{
+
+  .padding_top_100 {
     padding-top: 100px;
   }
-  .contract_paddings{
-    padding-top: 152px;
-    padding-bottom: 152px;
-  }
-  .token_padding_top{
+
+  .token_padding_top {
     padding-top: 124px;
   }
-  .aboutpadding_top{
+
+  .aboutpadding_top {
     padding-top: 100px;
   }
-  .accord_padding_top{
+
+  .accord_padding_top {
     padding-top: 97px;
   }
-  .accord_padding_bottom{
+
+  .accord_padding_bottom {
     padding-bottom: 97px;
   }
-  .socail_paddings{
+
+  .socail_paddings {
     padding-top: 124px;
     padding-bottom: 34px;
   }
-  .footer_padding_top{
+
+  .footer_padding_top {
     padding-top: 120px;
   }
-  .token_Card{
+
+  .token_Card {
     padding: 32px 75px;
   }
 }
+
+@media (max-width:991.9px) {
+  .mobile_view {
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-direction: column;
+    top: 0;
+    transition: all 700ms linear;
+    background: black;
+    min-height: 100vh;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+  }
+
+  .overflow_hidden {
+    overflow: hidden;
+  }
+
+  .bar {
+    width: 26px;
+    height: 3px;
+    z-index: 99;
+    background: white;
+    transition: all 400ms linear;
+  }
+
+  .cross .bar:nth-child(1) {
+    transform: translateY(8px);
+    rotate: 45deg;
+  }
+
+  .cross .bar:nth-child(2) {
+    transform: translateX(-100%);
+    display: none;
+  }
+
+  .cross .bar:nth-child(3) {
+    transform: translateY(-8px);
+    rotate: -48deg;
+  }
+
+  .navShow {
+    right: 0;
+  }
+
+  .navhide {
+    right: -100%;
+  }
+
+}
+
 @media (min-width:1535.9px) {
-  .Roadmaptradeimg{
-    margin-top: -14%;
+  .Roadmaptradeimg {
+    margin-top: -16%;
     max-width: 1440px;
   }
 }
 
-
 @media (min-width:1440px) and (max-width:1920px) {
-  .max_width_1140{
+  .max_width_1140 {
     max-width: 1140px !important;
   }
 }
+
 @media (min-width:1919.9px) {
-  .Roadmaptradeimg{
+  .Roadmaptradeimg {
     margin-top: -11%;
     max-width: 1440px;
   }

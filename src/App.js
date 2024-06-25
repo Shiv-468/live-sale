@@ -12,7 +12,7 @@ import Socials from './components/Socials';
 
 function App() {
   return (
-    <div className="App">
+    <div className="overflow-hidden">
       <HeroSection/>
       <About/>
       <Contract/>

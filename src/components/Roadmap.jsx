@@ -4,10 +4,17 @@ import Roadmaptrade from '../assets/images/webp/Roadmap.png'
 import Phase1botm from '../assets/images/webp/phase1botm.png'
 import Phase2botm from '../assets/images/webp/phase2botm.png'
 import Phase3botm from '../assets/images/webp/phase3botm.png'
-
+import Ellipse3L from '../assets/images/webp/Ellipse3L.png'
+import Ellipse4R from '../assets/images/webp/Ellipse4R.png'
 const Roadmap = () => {
   return (
-   <section className=' roadmapBG'>
+   <section className=' roadmapBG pb-4 position-relative'>
+    <div className=" position-absolute Ellipse3L z-1">
+      <img src={Ellipse3L} alt="Ellipse3L" className=' w-100' />
+    </div>
+    <div className=" position-absolute Ellipse4R z-1">
+      <img src={Ellipse4R} alt=" Ellipse4R" className=' w-100' />
+    </div>
     <h2 className=' mb-0 light_white font_xl line_height_xl fw-semibold font_Manrope text-center'>Roadmap</h2>
     <Container className='max_width_1140'>
       <Row className=' padding_top_100 justify-content-center'>

@@ -4,18 +4,18 @@
     --font-xmd: 20px;
     --font-md: 24px;
     --font-xlg: 32px;
-    --font-lg: 40px;
-    --font-xl: 48px;
-    --font-2xl: 60px;
+    --font-lg: 34px;
+    --font-xl: 42px;
+    --font-2xl:56px;
 
     --line-height-xsm: 20px;
     --line-height-sm: 21px;
     --line-height-xmd: 24px;
     --line-height-md: 30px;
     --line-height-xlg: 36px;
-    --line-height-lg: 48px;
-    --line-height-xl: 57px;
-    --line-height-2xl: 72px;
+    --line-height-lg: 38px;
+    --line-height-xl: 47px;
+    --line-height-2xl: 52px;
     --black:#010101;
     --yellow: #FFF624;
     --white-smoke: #C1C1C1;
@@ -44,7 +44,9 @@
 .white_smoke {
     color: var(--white-smoke) !important;
 }
-
+.bg_yellow{
+    background: var(--yellow);
+}
 .color_yellow {
     color: var(--yellow);
 }
@@ -111,4 +113,26 @@
 
 .line_height_2xl {
     line-height: var(--line-height-2xl);
+}
+
+@media (min-width:575.9px) {
+    :root {
+        --font-xsm: 14px;
+        --font-sm: 16px;
+        --font-xmd: 20px;
+        --font-md: 24px;
+        --font-xlg: 32px;
+        --font-lg: 40px;
+        --font-xl: 48px;
+        --font-2xl: 60px;
+    
+        --line-height-xsm: 20px;
+        --line-height-sm: 21px;
+        --line-height-xmd: 24px;
+        --line-height-md: 30px;
+        --line-height-xlg: 36px;
+        --line-height-lg: 48px;
+        --line-height-xl: 57px;
+        --line-height-2xl: 72px;
+    }
 }

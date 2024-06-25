@@ -1,6 +1,7 @@
 import React, { useCallback, useRef, useState } from 'react'
 import UnionContractTop from '../assets/images/webp/UnionContractTop.png'
 import UnionContractBottom from '../assets/images/webp/UnionContractBottom.png'
+import Ellipse2L from '../assets/images/webp/Ellipse2L.png'
 import { Container } from 'react-bootstrap'
 
 const Contract = () => {
@@ -12,7 +13,10 @@ const Contract = () => {
       }
         , [text])
   return (
-   <section className='ContractBG bg-black'>
+   <section className='ContractBG bg-black position-relative'>
+    <div className=" position-absolute Ellipse2L z-1">
+      <img src={Ellipse2L} alt="Ellipse2L" className=' w-100' />
+    </div>
     <img src={UnionContractTop} alt="UnionContractTop" className=' w-100' />
     <Container className='contract_paddings max_width_1140'>
         <h2 className=' mb-0 font_xl line_height_xl font_Manrope light_white fw-semibold text-center'><span className=' color_yellow'>$CLAIR</span> Smart Contract Address</h2>
