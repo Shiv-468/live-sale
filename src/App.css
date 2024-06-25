@@ -10,7 +10,7 @@
 }
 
 .next_section {
-position: absolute;
+  position: absolute;
   padding: 10px 4px;
   border-radius: 4px;
   z-index: 1 !important;
@@ -240,23 +240,27 @@ position: absolute;
   border-radius: 16px;
   border: 1px solid #FFF62466;
 }
-.SocailsDino{
+
+.SocailsDino {
   right: 6%;
   top: 18%;
 }
+
 .slider_box {
   padding: 23px 36px;
   max-width: 267px;
   border-radius: 7px;
   margin-right: 16px;
 }
-.footerBG{
-  background-image: url(./assets/images/webp/FooterBG.png),linear-gradient(180deg, #000000 12.27%, rgba(0, 0, 0, 0.205103) 82.49%, rgba(0, 0, 0, 0) 100%);
+
+.footerBG {
+  background-image: url(./assets/images/webp/FooterBG.png), linear-gradient(180deg, #000000 12.27%, rgba(0, 0, 0, 0.205103) 82.49%, rgba(0, 0, 0, 0) 100%);
   ;
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .roadmapBG {
   background-image: url(./assets/images//webp/Roadmapbg.webp);
   background-size: cover;
@@ -435,27 +439,34 @@ position: absolute;
 .FooterLink:hover::after {
   width: 100%;
 }
-.LangDropdown{
+
+.LangDropdown {
   background: transparent;
   border: none;
-  display: flex; align-items: center;
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
-.LangDropdown:hover{
+
+.LangDropdown:hover {
   background: transparent;
 
 }
+
 .dropdown-toggle {
   padding: 0 !important;
 }
+
 .dropdown-toggle::after {
   width: 10px;
   height: 5px;
   margin-left: 18px;
 }
-.btn.show{
+
+.btn.show {
   background: transparent;
 }
+
 .dropdown-toggle::after {
   background-image: url("./assets/images/svg/dropdown.svg") !important;
   border: none !important;
@@ -474,12 +485,15 @@ position: absolute;
   --bs-dropdown-min-width: 6rem !important;
   --bs-btn-active-shadow: none !important;
 }
-.section_margin{
+
+.section_margin {
   margin-top: -1px;
 }
-.cursor_pointer{
+
+.cursor_pointer {
   cursor: pointer;
 }
+
 /*==================== footer ============ */
 .footer_bg {
   background: linear-gradient(180deg, #000000 12.27%, rgba(0, 0, 0, 0.205103) 82.49%, rgba(0, 0, 0, 0) 100%);
@@ -588,6 +602,7 @@ position: absolute;
 .max_width_180 {
   max-width: 180px;
 }
+
 /*=============== gap ================== */
 .gap_12 {
   gap: 12px;
@@ -798,9 +813,11 @@ position: absolute;
     top: 52%;
     right: 18%;
   }
-.mr_28{
-  margin-right: 28px;
-}
+
+  .mr_28 {
+    margin-right: 28px;
+  }
+
   .gap_32 {
     gap: 32px;
   }
@@ -904,11 +921,13 @@ position: absolute;
   }
 
 }
+
 @media (min-width:1199.9px) {
   .min_h_820 {
-    min-height: 820px;
+    min-height: 820px !important;
   }
 }
+
 @media (min-width:1535.9px) {
   .Roadmaptradeimg {
     margin-top: -16%;
@@ -927,7 +946,28 @@ position: absolute;
     margin-top: -11%;
     max-width: 1440px;
   }
-  .next_section{
+
+  .next_section {
     right: 25%;
   }
+
+  .Aboutdino {
+    top: 52%;
+    right: 27%;
+  }
+
+  .Qmark2 {
+    right: 22%;
+    top: 25%;
+  }
+
+  .Qmark1 {
+    top: 40%;
+    left: 23.5%;
+  }
+
+  .SocailsDino {
+    right: 26%;
+    top: 18%;
+}
 }

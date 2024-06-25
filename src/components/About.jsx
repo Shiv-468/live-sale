@@ -12,8 +12,9 @@ import BarIcon from '../assets/images/webp/BarIcon.webp'
 import Yellowline from '../assets/images/webp/yellowline.webp'
 import Whiteline from '../assets/images/webp/whiteline.webp'
 import Ellipse1R from '../assets/images/webp/Ellipse1R.webp'
-const { useState, useEffect } = React;
+
 const About = () => {
+  const { useState, useEffect } = React;
     const [countdownDate, setCountdownDate] = useState(new Date('8 /25/2024').getTime());
     const [state, setState] = useState({
       days: 0,
@@ -49,7 +50,7 @@ const About = () => {
       }
     };
   return (
-   <section className=' bg-black position-relative section_margin' id='about'>
+   <section className=' bg-black position-relative section_margin pt-5' id='about'>
     <div className=" position-absolute Ellipse1R z-1">
         <img src={Ellipse1R} alt=" Ellipse1R" className=' w-100' />
     </div>
