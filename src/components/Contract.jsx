@@ -13,7 +13,7 @@ const Contract = () => {
       }
         , [text])
   return (
-   <section className='ContractBG bg-black position-relative section_margin'>
+   <section className='ContractBG bg-black position-relative section_margin' id='WhitePaper'>
     <div className=" position-absolute Ellipse2L z-1">
       <img src={Ellipse2L} alt="Ellipse2L" className=' w-100' />
     </div>

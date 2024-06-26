@@ -15,16 +15,18 @@ import Slider6 from '../assets/images/webp/Slider6.webp'
 import Ellipse3R from '../assets/images/webp/Ellipse3R.webp'
 const Audited = () => {
   var settings = {
-    dots: false,
-    infinite: true,
-    variableWidth: true,
-    speed: 500,
+    variableWidth: true,                
+    arrows: false,        
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false
+    autoplay: true,
+    autoplaySpeed: 0,
+    speed: 8000,
+    pauseOnHover: false,
+    cssEase: 'linear'  
   };
   return (
-    <section className=' AuditBG  position-relative section_margin'>
+    <section className=' AuditBG  position-relative section_margin' id='Audit'>
       <div className=" position-absolute Ellipse3R z-1">
         <img src={Ellipse3R} alt="Ellipse3R" className=' w-100' />
       </div>
@@ -44,16 +46,16 @@ const Audited = () => {
           </Col>
         </Row>
         <div className="yellow_line w-100"></div>
-        <Row className=' Glyph_padding_bottom pt-5 flex-column-reverse flex-md-row'>
-          <Col md={6} className=' d-flex align-items-center justify-content-end mt-4 mt-md-0' data-aos="fade-right">
+        <Row className=' Glyph_padding_bottom pt-5 flex-column-reverse flex-lg-row'>
+          <Col lg={6} className=' d-flex align-items-center justify-content-center justify-content-lg-end mt-4 mt-lg-0' data-aos="fade-right">
             <div className=" d-flex flex-column gap-3 max_width_475">
-              <h3 className=' mb-0 font_xlg line_height_lg font_Manrope fw-semibold light_white text-center text-md-start'>Listing on <span className=' color_yellow'>Major Exchanges</span></h3>
-              <p className=' mb-0 font_xmd line_height_md font_Manrope fw-normal white_smoke text-center text-md-start'>Baby Sinclair’s Team is in action to secure the <span className=' color_yellow'>$CLAIR</span> listing on major exchanges. Exciting milestones ahead.</p>
+              <h3 className=' mb-0 font_xlg line_height_lg font_Manrope fw-semibold light_white text-center text-lg-start'>Listing on <span className=' color_yellow'>Major Exchanges</span></h3>
+              <p className=' mb-0 font_xmd line_height_md font_Manrope fw-normal white_smoke text-center text-lg-start'>Baby Sinclair’s Team is in action to secure the <span className=' color_yellow'>$CLAIR</span> listing on major exchanges. Exciting milestones ahead.</p>
             </div>
           </Col>
-          <Col md={6}  data-aos="fade-left">
+          <Col lg={6}  data-aos="fade-left" className=' d-flex flex-column justify-content-end align-items-center align-items-lg-end'>
             {/*================= slider=================== */}
-        <div className="YellowSliderBox">
+        <div className="YellowSliderBox px-3 overflow-hidden w-100">
         <Slider {...settings}>
               <div>
                 <div className="slider_box bg-white">

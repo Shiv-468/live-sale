@@ -8,7 +8,7 @@ import Tokenbaby from '../assets/images/webp/tokenbaby.webp'
 import Ellipse2R from '../assets/images/webp/Ellipse2R.webp'
 const Tokenomics = () => {
   return (
-   <section className=' TokenBG token_padding_top token_padding_bottom position-relative section_margin'>
+   <section className=' TokenBG token_padding_top token_padding_bottom position-relative section_margin' id='Tokenomics'>
     <div className=" position-absolute Ellipse2R z-1">
         <img src={Ellipse2R} alt="Ellipse2R" className=' w-100' />
     </div>

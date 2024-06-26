@@ -32,11 +32,11 @@ const HeroSection = () => {
           <p className=' mb-0 font_xlg line_height_lg fw-semibold color_yellow font_Manrope cursor_pointer'>$CLAIR</p>
          </div>
         <Nav className={`${data ? "navShow" : "navhide"} d-flex align-items-center nav_gap mobile_view`}>
-          <NavLink to ="#" className='p-0 font_sm fw-medium line_height_xmd font_Manrope white_smoke'>About</NavLink>
-          <NavLink to ="#" className='p-0 font_sm fw-medium line_height_xmd font_Manrope white_smoke'>Tokenomics</NavLink>
-          <NavLink to ="#" className='p-0 font_sm fw-medium line_height_xmd font_Manrope white_smoke'>Audit</NavLink>
-          <NavLink to ="#" className='p-0 font_sm fw-medium line_height_xmd font_Manrope white_smoke'>Roadmap</NavLink>
-          <NavLink to ="#" className='p-0 font_sm fw-medium line_height_xmd font_Manrope white_smoke mr_28'>White Paper</NavLink>
+          <NavLink to ="#" href='#About' className='p-0 font_sm fw-medium line_height_xmd font_Manrope navbarlinks white_smoke'>About</NavLink>
+          <NavLink to ="#" href='#Tokenomics' className='p-0 font_sm fw-medium line_height_xmd font_Manrope navbarlinks white_smoke'>Tokenomics</NavLink>
+          <NavLink to ="#" href='#Audit' className='p-0 font_sm fw-medium line_height_xmd font_Manrope navbarlinks white_smoke'>Audit</NavLink>
+          <NavLink to ="#" href='#Roadmap' className='p-0 font_sm fw-medium line_height_xmd font_Manrope navbarlinks white_smoke'>Roadmap</NavLink>
+          <NavLink to ="#" href='#WhitePaper' className='p-0 font_sm fw-medium line_height_xmd font_Manrope navbarlinks white_smoke mr_28'>White Paper</NavLink>
           <Dropdown>
                 <Dropdown.Toggle variant="success" id="dropdown-basic" className=' LangDropdown'>
 

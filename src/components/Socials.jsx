@@ -20,13 +20,13 @@ const Socials = () => {
                 <p className=' mb-0 color_gray font_sm line_height_xmd font_Manrope fw-normal text-center mt-3 z-2' data-aos="zoom-in">Join us on social media for exclusive giveaways and stay connected!</p>
                 <p className=' mb-0 color_yellow font_xmd line_height_md font_Manrope fw-normal margin_top_32 text-center' data-aos="zoom-in">“Exciting Releases of 'Bad Players' Avatars Coming Soon: Be Ready for the Fun!"</p>
                 <div className=" d-flex gap-3 margin_top_32" data-aos="zoom-in">
-                    <a href="https://discord.com/channels/984345847628181504/984345847628181513" target='_blank' className='SocialLink  d-flex align-items-center justify-content-center'>
+                    <a href={"https://discord.com/channels/984345847628181504/984345847628181513"} target='_blank' rel='noreferrer' className='SocialLink  d-flex align-items-center justify-content-center'>
                         <img src={DiscordImg} alt="DiscordImg" />
                     </a>
-                    <a href="https://x.com/?lang=en" target=' _blank' className='SocialLink  d-flex align-items-center justify-content-center'>
+                    <a href={"https://x.com/?lang=en"} target=' _blank' rel='noreferrer' className='SocialLink  d-flex align-items-center justify-content-center'>
                         <img src={Twitter} alt="Twitter" />
                     </a>
-                    <a href="https://telegram.org/" target='_blank' className='SocialLink  d-flex align-items-center justify-content-center'>
+                    <a href={"https://telegram.org/"} target='_blank' rel='noreferrer' className='SocialLink  d-flex align-items-center justify-content-center'>
                         <img src={Telegram} alt="Telegram" />
                     </a>
                 </div>
