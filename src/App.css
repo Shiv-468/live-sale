@@ -38,20 +38,22 @@
   padding-top: 26px;
   padding-bottom: 26px;
   backdrop-filter: blur(10px);
-
 }
 
 .Logo {
   width: 47px;
   height: 47px;
 }
-.navbarlinks{
+
+.navbarlinks {
   transition: all 300ms linear;
 }
-.navbarlinks:hover{
+
+.navbarlinks:hover {
   color: #fff !important;
   stroke-width: 2px solid white;
 }
+
 .sclair_btn {
   max-width: 157px;
   height: 48px;
@@ -246,6 +248,7 @@
   border-radius: 16px;
   border: 1px solid #FFF62466;
 }
+
 .SocailsDino {
   right: 6%;
   top: 18%;
@@ -257,10 +260,12 @@
   border-radius: 7px;
   margin-right: 16px;
 }
-.slick-tract{
+
+.slick-tract {
   display: flex !important;
   overflow: hidden !important;
 }
+
 .footerBG {
   background-image: url(./assets/images/webp/FooterBG.png), linear-gradient(180deg, #000000 12.27%, rgba(0, 0, 0, 0.205103) 82.49%, rgba(0, 0, 0, 0) 100%);
   background-position: 50%;
@@ -885,7 +890,7 @@
     flex-direction: column;
     top: 0;
     transition: all 700ms linear;
-    background: black;
+    background: var(--black);
     min-height: 100vh;
     position: fixed;
     z-index: 100 !important;
@@ -976,5 +981,5 @@
   .SocailsDino {
     right: 26%;
     top: 18%;
-}
+  }
 }
