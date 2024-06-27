@@ -15,7 +15,7 @@ const Roadmap = () => {
     <div className=" position-absolute Ellipse4R z-1">
       <img src={Ellipse4R} alt=" Ellipse4R" className=' w-100' />
     </div>
-    <h2 className=' mb-0 light_white font_xl line_height_xl fw-semibold font_Manrope text-center'>Roadmap</h2>
+    <h2 className=' mb-0 light_white font_xl line_height_xl fw-semibold font_Manrope text-center p-0 pt-sm-4 pt-md-5 padding_top_64'>Roadmap</h2>
     <Container className='max_width_1140'>
       <Row className=' padding_top_100 justify-content-center'>
         <Col md={6} lg={4} className=' d-flex justify-content-center justify-content-md-end phase1padding_top' data-aos="zoom-in">

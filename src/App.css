@@ -821,6 +821,10 @@
 }
 
 @media (min-width:991.9px) {
+  .padding_top_64 {
+    padding-top: 64px !important;
+  }
+
   .Aboutdino {
     top: 52%;
     right: 18%;
