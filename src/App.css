@@ -34,9 +34,8 @@
 .navigationDiv {
   background: var(--white-transp);
   border-bottom: 1px solid var(--white-border);
-  height: 100px;
-  padding-top: 26px;
-  padding-bottom: 26px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   backdrop-filter: blur(10px);
 }
 
@@ -644,6 +643,7 @@
 .mx_28 {
   margin-left: 28px;
   margin-right: 28px;
+  height: 100px;
 }
 
 .margin_top_20 {
@@ -758,6 +758,9 @@
   .line-white {
     top: -12px;
     right: 12px;
+  }
+  .navigationDiv{
+    padding: 26px 0;
   }
 }
 
