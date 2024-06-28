@@ -1,10 +1,10 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import Iconparkdot from '../assets/images/webp/icon_park_dot.webp'
-import TokenImg from '../assets/images/webp/TokenImg.webp'
-import TokenFox from '../assets/images/webp/tokenfox.webp'
-import Tokenplus from '../assets/images/webp/tokenplus.webp'
-import Tokenbaby from '../assets/images/webp/tokenbaby.webp'
+import TokenImg from '../assets/images/webp/TokenImg.png'
+import TokenFox from '../assets/images/webp/tokenfox.png'
+import Tokenplus from '../assets/images/webp/tokenplus.png'
+import Tokenbaby from '../assets/images/webp/tokenbaby.png'
 import Ellipse2R from '../assets/images/webp/Ellipse2R.webp'
 const Tokenomics = () => {
   return (

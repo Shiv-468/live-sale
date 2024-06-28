@@ -50,7 +50,7 @@ const About = () => {
       }
     };
   return (
-   <section className=' bg-black position-relative section_margin pt-5' id='about'>
+   <section className=' bg-black position-relative section_margin' id='about'>
     <div className=" position-absolute Ellipse1R z-1">
         <img src={Ellipse1R} alt=" Ellipse1R" className=' w-100' />
     </div>
@@ -150,7 +150,7 @@ const About = () => {
             <h2 className=' mb-0 font_xl line_height_xl fw-semibold light_white aboutpadding_top z-1'>About <span className=' color_yellow fw-bold'>$CLAIR</span></h2>
             <p className=' mb-0 color_gray font_Manrope fw-normal font_sm line_height_xmd max_width_776 z-1 text-center mt-3'>As you navigate through the avatars, you'll find each one has a unique voice, bringing laughter and a touch of sarcasm to the otherwise serious discussions in the crypto space.</p>
             <p className=' mb-0 color_gray font_Manrope fw-normal font_sm line_height_xmd max_width_776 z-1 text-center margin_top_12'>In a landscape where tensions can run high, Baby Sinclair’s memes serve as a reminder that, sometimes, the best way to confront challenges is with a good laugh.</p>
-            <p className=' mb-0 color_gray font_Manrope fw-normal font_sm line_height_xmd max_width_776 z-1 text-center margin_top_12'>In this meme-driven world, laughter is not just a reaction; it's a powerful tool for change, and Baby Sinclair is wielding it with style. The bad players better watch out; the crypto defender is here, armed with memes and ready to act.</p>
+            <p className=' mb-0 color_gray font_Manrope fw-normal font_sm line_height_xmd max_width_850 z-1 text-center margin_top_12'>In this meme-driven world, laughter is not just a reaction; it's a powerful tool for change, and Baby Sinclair is wielding it with style. The bad players better watch out; the crypto defender is here, armed with memes and ready to act.</p>
             <button className="common_btn font_Manrope font_sm line_height_xmd fw-bold color_black margin_top_32 z-1">Learn More</button>
         </div>
     </Container>

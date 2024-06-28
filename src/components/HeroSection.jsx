@@ -1,24 +1,31 @@
 import React,{useState} from 'react'
 import Logo from '../assets/images/webp/logo.webp'
-import HeroImg from '../assets/images/webp/HeroImg.webp'
+import HeroImg from '../assets/images/webp/HeroImg.png'
 import Nextsection from '../assets/images/webp/nextsection.webp'
 import { Container,Dropdown,Nav, NavLink } from 'react-bootstrap'
 import Cart from '../assets/images/svg/cart.svg'
 import Ellipse1L from '../assets/images/webp/Ellipse1L.webp'
 import LanguageIcon from '../assets/images/svg/LanguageIcon.svg'
 const HeroSection = () => {
-  const [data, setdata] = useState(false);
+  const [data, setData] = useState(false);
+
   function view() {
-    setdata(!data)
+    setData(!data);
     if (data === false) {
       document.body.classList.add("overflow_hidden");
-    }
-    else {
+    } else {
       document.body.classList.remove("overflow_hidden");
     }
-  };
+  }
+
+  function handleNavLinkClick() {
+    if (data) {
+      setData(false);
+      document.body.classList.remove("overflow_hidden");
+    }
+  }
   return (
-    <section className='HeroBG min-vh-100 min_h_820 bg_black position-relative d-flex flex-column'>
+    <section className='HeroBG min-vh-100 min_h_820 bg_black position-relative d-flex flex-column '>
       <div className=" position-absolute Ellipse1L">
         <img src={Ellipse1L} alt="Ellipse1L" className=' w-100' />
       </div>
@@ -32,11 +39,11 @@ const HeroSection = () => {
           <p className=' mb-0 font_xlg line_height_lg fw-semibold color_yellow font_Manrope cursor_pointer'>$CLAIR</p>
          </div>
         <Nav className={`${data ? "navShow" : "navhide"} d-flex align-items-center nav_gap mobile_view`}>
-          <NavLink to ="#" href='#About' className='p-0 font_sm fw-medium line_height_xmd font_Manrope navbarlinks white_smoke'>About</NavLink>
-          <NavLink to ="#" href='#Tokenomics' className='p-0 font_sm fw-medium line_height_xmd font_Manrope navbarlinks white_smoke'>Tokenomics</NavLink>
-          <NavLink to ="#" href='#Audit' className='p-0 font_sm fw-medium line_height_xmd font_Manrope navbarlinks white_smoke'>Audit</NavLink>
-          <NavLink to ="#" href='#Roadmap' className='p-0 font_sm fw-medium line_height_xmd font_Manrope navbarlinks white_smoke'>Roadmap</NavLink>
-          <NavLink to ="#" href='#WhitePaper' className='p-0 font_sm fw-medium line_height_xmd font_Manrope navbarlinks white_smoke mr_28'>White Paper</NavLink>
+          <NavLink onClick={handleNavLinkClick} to ="#" href='#About' className='p-0 font_sm fw-medium line_height_xmd font_Manrope navbarlinks white_smoke'>About</NavLink>
+          <NavLink onClick={handleNavLinkClick} to ="#" href='#Tokenomics' className='p-0 font_sm fw-medium line_height_xmd font_Manrope navbarlinks white_smoke'>Tokenomics</NavLink>
+          <NavLink onClick={handleNavLinkClick} to ="#" href='#Audit' className='p-0 font_sm fw-medium line_height_xmd font_Manrope navbarlinks white_smoke'>Audit</NavLink>
+          <NavLink onClick={handleNavLinkClick} to ="#" href='#Roadmap' className='p-0 font_sm fw-medium line_height_xmd font_Manrope navbarlinks white_smoke'>Roadmap</NavLink>
+          <NavLink onClick={handleNavLinkClick} to ="#" href='#WhitePaper' className='p-0 font_sm fw-medium line_height_xmd font_Manrope navbarlinks white_smoke mr_28'>White Paper</NavLink>
           <Dropdown>
                 <Dropdown.Toggle variant="success" id="dropdown-basic" className=' LangDropdown'>
 
@@ -58,7 +65,7 @@ const HeroSection = () => {
        </div>
         </Container>
       </nav>
-      <Container className='max_width_1140 d-flex flex-column flex-grow-1 align-items-center justify-content-center'>
+      <Container className='max_width_1140 pb-4 pb-sm-5 d-flex flex-column flex-grow-1 align-items-center justify-content-center'>
         <div className=" d-flex flex-column align-items-center ">
           <h1 className=' mb-0 font_Manrope font_2xl line_height_2xl fw-bold light_white text-center mt-5'>Presale is <span className=' color_yellow'>Live</span></h1>
           <p className=' mb-0 light_white font_sm line_height_xmd mt-3 font_Manrope text-center max_width_702'>Led by the most advanced AI technology, with a unique burn system to potentially increase its value significantly. Secure your chance to become the next millionaire!</p>
@@ -67,12 +74,12 @@ const HeroSection = () => {
           <img src={Cart} alt="Cart" />
           </button>
         </div>
-        <div className="max_width_810 mx-auto pt-1 ">
+        <div className="max_width_810 mx-auto pt-1  ">
           <img src={HeroImg} alt="HeroImg" className=' w-100' />
         </div>
  
       </Container>
-      <div className="next_section position-absolute">
+      <div className={`next_section position-absolute z-0 ${data ? 'hidden' : ''}`}>
         <Nav.Link href='#about' className='cursor-pointer position-relative z-0' >
           <img src={Nextsection} alt="Nextsection" />
         </Nav.Link>

@@ -8,24 +8,29 @@
   text-decoration: none !important;
   box-sizing: border-box;
 }
-
+.navbar-toggler {
+  background-color: yellow !important;
+}
 .next_section {
   position: absolute;
   padding: 10px 4px;
   border-radius: 4px;
-  z-index: 1 !important;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
   border-bottom: 1px solid #FFFFFF17;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.04) 3.33%, rgba(255, 255, 255, 0) 69.17%);
-  bottom: 12%;
+  bottom: 3%;
   right: 2%;
 }
-
+.next_section.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
 .font_Manrope {
   font-family: "Manrope", sans-serif;
 }
 
 .HeroBG {
-  background-image: url(./assets/images/webp/HeroBG.webp);
+  background-image: url(./assets/images/webp/HeroBG.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -160,10 +165,11 @@
 }
 
 .TokenBG {
-  background-image: url("./assets/images/webp/TokenomicsBG.webp"), linear-gradient(180deg, #000000 14.61%, rgba(0, 0, 0, 0.205103) 82.49%, rgba(0, 0, 0, 0) 100%);
+  background-image: url("./assets/images/webp/TokenBG.png"), linear-gradient(180deg, #000000 14.61%, rgba(0, 0, 0, 0.205103) 82.49%, rgba(0, 0, 0, 0) 100%);
   background-color: var(--black);
   background-repeat: no-repeat;
   background-size: cover;
+  background-blend-mode: color;
   background-position: center;
 }
 
@@ -222,9 +228,23 @@
 .Glyph {
   max-width: 245px;
 }
-
+.GlyphBG{
+  background-image: url(./assets/images/webp/glympbg.png);
+  background-size: cover;
+  background-position:  center;
+  background-repeat: no-repeat;
+  min-height: 457px;
+  max-width: 663px;
+  z-index: 0 !important;
+  left: -3%;
+  top: -54%;
+}
 .AuditBG {
-  background: #141403;
+  background-image:url(./assets/images/webp/AuditBG.png);
+  background-size: cover ;
+  background-position:  center;
+  background-repeat: no-repeat;
+  background-color: #141403;
 }
 
 .Glyph_paddings {
@@ -239,7 +259,7 @@
 }
 
 .YellowSliderBox {
-  padding: 30px 15px;
+  padding: 30px 15px 15px;
   max-width: 465px;
   background: #FFFFFF14;
   position: relative;
@@ -260,8 +280,9 @@
   margin-right: 16px;
 }
 
-.slick-tract {
+.slick-track {
   display: flex !important;
+  height: 99px;
   overflow: hidden !important;
 }
 
@@ -431,7 +452,14 @@
   right: 1%;
   top: 25%;
 }
-
+.Socialboxellipse1{
+  left: 0;
+  top: 0;
+}
+.Socialboxellipse2{
+  right: 0;
+  bottom: 0;
+}
 .FooterLink::after {
   content: '';
   position: absolute;
@@ -485,7 +513,24 @@
   height: 18px;
   margin-left: 12px !important;
 }
-
+.line1{
+  max-width: 186px;
+  height: 1px;
+  opacity: 20%;
+  background: #FFF624;
+}
+.line2{
+  max-width: 57px;
+  opacity: 20%;
+  height: 1px;
+  background: #FFF624;
+}
+.line3{
+  max-width: 160px;
+  opacity: 20%;
+  height: 1px;
+  background: #FFF624;
+}
 .dropdown-menu[data-bs-popper] {
   top: 100%;
   left: -50% !important;
@@ -500,7 +545,10 @@
 .section_margin {
   margin-top: -1px !important;
 }
-
+.sliderImage{
+  max-width: 195px;
+  height: 53px;
+}
 .cursor_pointer {
   cursor: pointer;
 }
@@ -525,15 +573,14 @@
   box-shadow: none !important;
 }
 
-.accordion-button:not(.collapsed) {
-  background-color: transparent;
-}
-
 .accordion-item {
   border: 1px solid #FFFFFF3D;
   background-color: #FFFFFF14;
 }
-
+.accordion-button:not(.collapsed) .acc_head {
+  color: var(--light-white) !important;
+  font-weight: 600 !important;
+}
 .accordion-button:not(.collapsed) {
   background-color: transparent !important;
   box-shadow: none !important;
@@ -601,7 +648,9 @@
 .max_width_475 {
   max-width: 475px;
 }
-
+.max_width_850 {
+  max-width: 850px;
+}
 .max_width_254 {
   max-width: 254px;
 }
@@ -643,7 +692,6 @@
 .mx_28 {
   margin-left: 28px;
   margin-right: 28px;
-  height: 100px;
 }
 
 .margin_top_20 {
@@ -729,6 +777,9 @@
 }
 
 @media (min-width:575.9px) {
+  .next_section {
+    bottom: 12%;
+  }
   .Glyph_paddings {
     padding-top: 77px;
     padding-bottom: 84px;
@@ -768,13 +819,12 @@
   .Glyph_padding_bottom {
     padding-bottom: 77px;
   }
-
   .slider_box {
     margin-right: 32px;
   }
 
   .YellowSliderBox {
-    padding: 40px 15px;
+    padding: 40px 15px 15px;
   }
 
   .gap_32 {
@@ -843,7 +893,6 @@
 
   .Roadmaptradeimg {
     margin-top: -20%;
-    max-width: 1440px;
     padding-bottom: 20px;
   }
 
@@ -887,18 +936,21 @@
   .token_Card {
     padding: 32px 75px;
   }
+  .min_h_820 {
+    min-height: 820px !important;
+  }
 }
 
 @media (max-width:991.9px) {
   .mobile_view {
-    display: flex;
+    display: flex !important;
     align-items: center !important;
     justify-content: center !important;
     flex-direction: column;
     top: 0;
-    transition: all 700ms linear;
+    transition: all 500ms linear;
     background: var(--black);
-    min-height: 100vh;
+    min-height: 100vh !important;
     position: fixed;
     z-index: 100 !important;
     width: 100%;
@@ -942,15 +994,12 @@
 }
 
 @media (min-width:1199.9px) {
-  .min_h_820 {
-    min-height: 820px !important;
-  }
+ 
 }
 
 @media (min-width:1535.9px) {
   .Roadmaptradeimg {
-    margin-top: -16%;
-    max-width: 1440px;
+    margin-top: -19%;
   }
 }
 
@@ -962,12 +1011,13 @@
 
 @media (min-width:1919.9px) {
   .Roadmaptradeimg {
-    margin-top: -11%;
-    max-width: 1440px;
+    margin-top: -11.5%;
   }
-
+.Roadmaptradeimg{
+  max-width: 1440px;
+}
   .next_section {
-    right: 25%;
+    right: 18%;
   }
 
   .Aboutdino {

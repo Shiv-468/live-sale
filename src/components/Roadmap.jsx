@@ -1,6 +1,6 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import Roadmaptrade from '../assets/images/webp/Roadmap.webp'
+import Roadmaptrade from '../assets/images/webp/Roadmap.png'
 import Phase1botm from '../assets/images/webp/phase1botm.webp'
 import Phase2botm from '../assets/images/webp/phase2botm.webp'
 import Phase3botm from '../assets/images/webp/phase3botm.webp'
@@ -8,7 +8,7 @@ import Ellipse3L from '../assets/images/webp/Ellipse3L.webp'
 import Ellipse4R from '../assets/images/webp/Ellipse4R.webp'
 const Roadmap = () => {
   return (
-   <section className=' roadmapBG pb-4 position-relative section_margin' id='Roadmap'>
+   <section className=' roadmapBG position-relative section_margin' id='Roadmap'>
     <div className=" position-absolute Ellipse3L z-1">
       <img src={Ellipse3L} alt="Ellipse3L" className=' w-100' />
     </div>

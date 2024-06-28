@@ -5,9 +5,11 @@ import Twitter from '../assets/images/svg/twitter.svg'
 import Ellipse5R from '../assets/images/webp/Ellipse5R.webp'
 import Telegram from '../assets/images/svg/telegram.svg'
 import SocailsDino from '../assets/images/webp/SocailsDino.webp'
+import Socialboxellipse1 from '../assets/images/webp/socialboxellipse1.png'
+import Socialboxellipse2 from '../assets/images/webp/socialboxellipse2.png'
 const Socials = () => {
   return (
-    <section className=' bg-black socail_paddings position-relative section_margin'>
+    <section className=' bg-black socail_paddings position-relative section_margin' id='Cookies'>
             <div className=" position-absolute Ellipse5R z-1">
       <img src={Ellipse5R} alt=" Ellipse5R" className=' w-100' />
     </div>
@@ -15,7 +17,13 @@ const Socials = () => {
         <img src={SocailsDino} alt="SocailsDino" className=' w-100' />
     </div>
         <Container className='max_width_1140 z-2'>
-            <div className="socialcard mx-auto d-flex flex-column align-items-center justify-content-center z-2">
+            <div className="socialcard mx-auto d-flex flex-column align-items-center justify-content-center position-relative z-2">
+                <div className=" position-absolute Socialboxellipse1 z-0">
+                    <img src={Socialboxellipse1} alt="Socialboxellipse1" />
+                </div>
+                <div className=" position-absolute Socialboxellipse2 z-0">
+                    <img src={Socialboxellipse2} alt="Socialboxellipse2" />
+                </div>
                 <h2 className=' mb-0 font_xl line_height_xl font_Manrope fw-semibold light_white text-center z-2' data-aos="zoom-in">Our <span className=' color_yellow'>Socials</span></h2>
                 <p className=' mb-0 color_gray font_sm line_height_xmd font_Manrope fw-normal text-center mt-3 z-2' data-aos="zoom-in">Join us on social media for exclusive giveaways and stay connected!</p>
                 <p className=' mb-0 color_yellow font_xmd line_height_md font_Manrope fw-normal margin_top_32 text-center' data-aos="zoom-in">“Exciting Releases of 'Bad Players' Avatars Coming Soon: Be Ready for the Fun!"</p>

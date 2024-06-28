@@ -6,12 +6,12 @@ import "slick-carousel/slick/slick-theme.css";
 import Glyph from '../assets/images/webp/Glyph.webp'
 import UnionAuditTop from '../assets/images/webp/UnionAuditTop.webp'
 import UnionAuditBottom from '../assets/images/webp/UnionAuditBottom.webp'
-import Slider1 from '../assets/images/webp/Slider1.webp'
-import Slider2 from '../assets/images/webp/Slider2.webp'
-import Slider3 from '../assets/images/webp/Slider3.webp'
-import Slider4 from '../assets/images/webp/Slider4.webp'
-import Slider5 from '../assets/images/webp/Slider5.webp'
-import Slider6 from '../assets/images/webp/Slider6.webp'
+import Slider1 from '../assets/images/webp/Slider1.png'
+import Slider2 from '../assets/images/webp/Slider2.png'
+import Slider3 from '../assets/images/webp/Slider3.png'
+import Slider4 from '../assets/images/webp/Slider4.png'
+import Slider5 from '../assets/images/webp/Slider5.png'
+import Slider6 from '../assets/images/webp/Slider6.png'
 import Ellipse3R from '../assets/images/webp/Ellipse3R.webp'
 const Audited = () => {
   var settings = {
@@ -33,8 +33,9 @@ const Audited = () => {
       <img src={UnionAuditTop} alt="UnionAuditTop" className=' w-100 z-0' />
       <Container className='max_width_1140'>
         <Row className='Glyph_paddings'>
-          <Col md={6} className=' d-flex justify-content-center'  data-aos="fade-right">
-            <img src={Glyph} alt="Glyph" className=' w-100 Glyph' />
+          <Col md={6} className=' d-flex justify-content-center position-relative'  data-aos="fade-right">
+          <div className=" position-absolute GlyphBG w-100 d-none d-md-block"></div>
+            <img src={Glyph} alt="Glyph" className=' w-100 Glyph z-1' />
           </Col>
           <Col md={6} className=' d-flex flex-column align-items-start justify-content-center  mt-4 mt-md-0'  data-aos="fade-left">
             <div className=" d-flex flex-column gap_10">
@@ -59,35 +60,40 @@ const Audited = () => {
         <Slider {...settings}>
               <div>
                 <div className="slider_box bg-white">
-                  <img src={Slider1} alt="slider" />
+                  <img src={Slider1} alt="slider" className='sliderImage' />
                 </div>
               </div>
               <div>
                 <div className="slider_box bg-white">
-                  <img src={Slider2} alt="slider" />
+                  <img src={Slider2} alt="slider" className='sliderImage' />
                 </div>
               </div>
               <div>
                 <div className="slider_box bg-white">
-                  <img src={Slider3} alt="slider" />
+                  <img src={Slider3} alt="slider" className='sliderImage' />
                 </div>
               </div>
               <div>
                 <div className="slider_box bg-white">
-                  <img src={Slider4} alt="slider" />
+                  <img src={Slider4} alt="slider" className='sliderImage' />
                 </div>
               </div>
               <div>
                 <div className="slider_box bg-white">
-                  <img src={Slider5} alt="slider" />
+                  <img src={Slider5} alt="slider" className='sliderImage' />
                 </div>
               </div>
               <div>
                 <div className="slider_box bg-white">
-                  <img src={Slider6} alt="slider" />
+                  <img src={Slider6} alt="slider" className='sliderImage' />
                 </div>
               </div>
             </Slider>
+            <div className=" d-flex align-items-center gap-3 mt-3 mt-sm-4">
+              <div className="line1 w-100"></div>
+              <div className="line2 w-100"></div>
+              <div className="line3 w-100"></div>
+            </div>
         </div>
           </Col>
         </Row>
