@@ -688,7 +688,7 @@
 }
 
 .nav_gap {
-  gap: 32px;
+  gap: 24px;
 }
 
 /*=================== margin padding ================== */
@@ -942,6 +942,9 @@
   .min_h_820 {
     min-height: 820px !important;
   }
+  .nav_gap {
+    gap: 32px !important;
+  }
 }
 
 @media (max-width:991.9px) {
@@ -996,10 +999,6 @@
 
 }
 
-@media (min-width:1199.9px) {
- 
-}
-
 @media (min-width:1535.9px) {
   .Roadmaptradeimg {
     margin-top: -19%;
@@ -1029,13 +1028,13 @@
   }
 
   .Qmark2 {
-    right: 22%;
-    top: 25%;
+    right: 13%;
+    top: 27%;
   }
 
   .Qmark1 {
     top: 40%;
-    left: 23.5%;
+    left: 16.5%;
   }
 
   .SocailsDino {
