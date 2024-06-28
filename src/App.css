@@ -285,7 +285,9 @@
   height: 99px;
   overflow: hidden !important;
 }
-
+.btn-success{
+  --bs-btn-active-bg: transparent !important;
+}
 .footerBG {
   background-image: url(./assets/images/webp/FooterBG.webp), linear-gradient(180deg, #000000 12.27%, rgba(0, 0, 0, 0.205103) 82.49%, rgba(0, 0, 0, 0) 100%);
   background-position: 50%;
