@@ -30,7 +30,7 @@
 }
 
 .HeroBG {
-  background-image: url(./assets/images/webp/HeroBG.png);
+  background-image: url(./assets/images/webp/HeroBG.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -165,7 +165,7 @@
 }
 
 .TokenBG {
-  background-image: url("./assets/images/webp/TokenBG.png"), linear-gradient(180deg, #000000 14.61%, rgba(0, 0, 0, 0.205103) 82.49%, rgba(0, 0, 0, 0) 100%);
+  background-image: url("./assets/images/webp/TokenBG.webp"), linear-gradient(180deg, #000000 14.61%, rgba(0, 0, 0, 0.205103) 82.49%, rgba(0, 0, 0, 0) 100%);
   background-color: var(--black);
   background-repeat: no-repeat;
   background-size: cover;
@@ -229,7 +229,7 @@
   max-width: 245px;
 }
 .GlyphBG{
-  background-image: url(./assets/images/webp/glympbg.png);
+  background-image: url(./assets/images/webp/glympbg.webp);
   background-size: cover;
   background-position:  center;
   background-repeat: no-repeat;
@@ -240,7 +240,7 @@
   top: -54%;
 }
 .AuditBG {
-  background-image:url(./assets/images/webp/AuditBG.png);
+  background-image:url(./assets/images/webp/AuditBG.webp);
   background-size: cover ;
   background-position:  center;
   background-repeat: no-repeat;
@@ -287,9 +287,10 @@
 }
 
 .footerBG {
-  background-image: url(./assets/images/webp/FooterBG.png), linear-gradient(180deg, #000000 12.27%, rgba(0, 0, 0, 0.205103) 82.49%, rgba(0, 0, 0, 0) 100%);
+  background-image: url(./assets/images/webp/FooterBG.webp), linear-gradient(180deg, #000000 12.27%, rgba(0, 0, 0, 0.205103) 82.49%, rgba(0, 0, 0, 0) 100%);
   background-position: 50%;
   background-repeat: no-repeat;
+  height: 100%;
   background-size: cover;
 }
 

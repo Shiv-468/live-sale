@@ -4,6 +4,7 @@ import Ellipse4L from '../assets/images/webp/Ellipse4L.webp'
 const Footer = () => {
   return (
     <footer className=' bg_black position-relative section_margin '>
+      <div className="footerBG">
       <div className=" position-absolute Ellipse4L">
         <img src={Ellipse4L} alt="Ellipse4L" className=' w-100' />
       </div>
@@ -28,6 +29,7 @@ const Footer = () => {
        <div className="footer_line w-100 margin_top_40 margin_bottom_26"></div>
        </div>
       </Container>
+      </div>
     </footer>
   )
 }

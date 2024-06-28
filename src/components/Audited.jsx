@@ -6,12 +6,12 @@ import "slick-carousel/slick/slick-theme.css";
 import Glyph from '../assets/images/webp/Glyph.webp'
 import UnionAuditTop from '../assets/images/webp/UnionAuditTop.webp'
 import UnionAuditBottom from '../assets/images/webp/UnionAuditBottom.webp'
-import Slider1 from '../assets/images/webp/Slider1.png'
-import Slider2 from '../assets/images/webp/Slider2.png'
-import Slider3 from '../assets/images/webp/Slider3.png'
-import Slider4 from '../assets/images/webp/Slider4.png'
-import Slider5 from '../assets/images/webp/Slider5.png'
-import Slider6 from '../assets/images/webp/Slider6.png'
+import Slider1 from '../assets/images/webp/Slider1.webp'
+import Slider2 from '../assets/images/webp/Slider2.webp'
+import Slider3 from '../assets/images/webp/Slider3.webp'
+import Slider4 from '../assets/images/webp/Slider4.webp'
+import Slider5 from '../assets/images/webp/Slider5.webp'
+import Slider6 from '../assets/images/webp/Slider6.webp'
 import Ellipse3R from '../assets/images/webp/Ellipse3R.webp'
 const Audited = () => {
   var settings = {

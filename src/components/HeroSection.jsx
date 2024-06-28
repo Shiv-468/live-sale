@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import Logo from '../assets/images/webp/logo.webp'
-import HeroImg from '../assets/images/webp/HeroImg.png'
+import HeroImg from '../assets/images/webp/HeroImg.webp'
 import Nextsection from '../assets/images/webp/nextsection.webp'
 import { Container,Dropdown,Nav, NavLink } from 'react-bootstrap'
 import Cart from '../assets/images/svg/cart.svg'

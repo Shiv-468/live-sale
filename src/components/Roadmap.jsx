@@ -1,6 +1,6 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import Roadmaptrade from '../assets/images/webp/Roadmap.png'
+import Roadmaptrade from '../assets/images/webp/Roadmap.webp'
 import Phase1botm from '../assets/images/webp/phase1botm.webp'
 import Phase2botm from '../assets/images/webp/phase2botm.webp'
 import Phase3botm from '../assets/images/webp/phase3botm.webp'

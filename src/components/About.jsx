@@ -12,7 +12,7 @@ import Yellowline from '../assets/images/webp/yellowline.webp'
 import Whiteline from '../assets/images/webp/whiteline.webp'
 import Ellipse1R from '../assets/images/webp/Ellipse1R.webp'
 import styled from 'styled-components';
-import ThumbImage from '../assets/images/webp/Thumbimg.png';
+import ThumbImage from '../assets/images/webp/Thumbimg.webp';
 
 const SliderContainer = styled.div`
   position: relative;

@@ -5,8 +5,8 @@ import Twitter from '../assets/images/svg/twitter.svg'
 import Ellipse5R from '../assets/images/webp/Ellipse5R.webp'
 import Telegram from '../assets/images/svg/telegram.svg'
 import SocailsDino from '../assets/images/webp/SocailsDino.webp'
-import Socialboxellipse1 from '../assets/images/webp/socialboxellipse1.png'
-import Socialboxellipse2 from '../assets/images/webp/socialboxellipse2.png'
+import Socialboxellipse1 from '../assets/images/webp/socialboxellipse1.webp'
+import Socialboxellipse2 from '../assets/images/webp/socialboxellipse2.webp'
 const Socials = () => {
   return (
     <section className=' bg-black socail_paddings position-relative section_margin' id='Cookies'>
