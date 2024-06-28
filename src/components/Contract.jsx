@@ -17,7 +17,7 @@ const Contract = () => {
     <div className=" position-absolute Ellipse2L z-1">
       <img src={Ellipse2L} alt="Ellipse2L" className=' w-100' />
     </div>
-    <img src={UnionContractTop} alt="UnionContractTop" className=' w-100 z-0' />
+    <img src={UnionContractTop} alt="UnionContractTop" className=' w-100 z-0 ' />
     <Container className='contract_paddings max_width_1140' data-aos="fade-down"
      data-aos-easing="linear"
      data-aos-duration="1500">

@@ -17,7 +17,7 @@ const Roadmap = () => {
     </div>
     <h2 className=' mb-0 light_white font_xl line_height_xl fw-semibold font_Manrope text-center p-0 pt-sm-4 pt-md-5 padding_top_64'>Roadmap</h2>
     <Container className='max_width_1140'>
-      <Row className=' padding_top_100 justify-content-center'>
+      <Row className=' padding_top_100 justify-content-center pb-4 pb-sm-0'>
         <Col md={6} lg={4} className=' d-flex justify-content-center justify-content-md-end phase1padding_top' data-aos="zoom-in">
         <div className="Phase_card w-100 position-relative">
         <img src={Phase1botm} alt="Phase1botm" className=' position-absolute Phase1botmimg d-none d-lg-block' />
