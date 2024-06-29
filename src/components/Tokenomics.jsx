@@ -16,7 +16,7 @@ const Tokenomics = () => {
         <Row>
             <Col md={6} className=' d-flex flex-column z-3' data-aos="fade-right">
             <h2 className=' mb-0 font_Manrope font_xl line_height_xl fw-semibold light_white'>Tokenomics</h2>
-            <div className=" d-flex gap-3 align-items-center mt-3 mb-4">
+            <div className=" d-flex gap-3 align-items-center mt-2 mt-sm-3 mb-2 mb-sm-4">
                 <p className=' mb-0 font_Manrope font_md line_height_xlg fw-normal white_smoke'>Baby Sinclair</p>
                 <div className=" px-3 py-1 sclairDiv">
                     <p className=' mb-0 color_yellow font_Manrope font_md line_height_xlg fw-normal'>$Clair</p>
@@ -69,7 +69,7 @@ const Tokenomics = () => {
                     <img src={Tokenbaby} alt="Tokenbaby" className=' w-100 Tokenbaby' />
                 </div>
             </div>
-            <div className=" d-flex flex-column gap_10 justify-content-end mt-4 mt-xl-0">
+            <div className=" d-flex flex-column gap_10 justify-content-end mt-3 mt-sm-4 mt-xl-0">
                 <p className=' mb-0 font_Manrope font_xmd line_height_md fw-semibold light_white text-center text-xl-start'>Baby Sinclair Stands Strong with the Shiba Inu Community</p>
                 <p className=' mb-0 font_sm line_height_xmd font_Manrope fw-normal white_smoke text-center text-xl-start'>10% of every $CLAIR token sold post-presale will be dedicated to burning SHIB.</p>
             </div>

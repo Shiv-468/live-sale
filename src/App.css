@@ -249,7 +249,7 @@
 
 .Glyph_paddings {
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 
 .yellow_line {
@@ -706,7 +706,7 @@
 }
 
 .margin_top_12 {
-  margin-top: 12px;
+  margin-top: 8px;
 }
 
 .margin_top_40 {
@@ -731,7 +731,7 @@
 }
 
 .margin_top_60 {
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 .Glyph_padding_bottom {
@@ -816,9 +816,15 @@
   .navigationDiv{
     padding: 26px 0;
   }
+  .margin_top_12 {
+    margin-top: 12px;
+  }
 }
 
 @media (min-width:767.9px) {
+  .margin_top_60 {
+    margin-top: 60px;
+  }
   .Glyph_padding_bottom {
     padding-bottom: 77px;
   }

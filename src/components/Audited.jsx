@@ -47,7 +47,7 @@ const Audited = () => {
           </Col>
         </Row>
         <div className="yellow_line w-100"></div>
-        <Row className=' Glyph_padding_bottom pt-5 flex-column-reverse flex-lg-row'>
+        <Row className=' Glyph_padding_bottom pt-4 pt-sm-5 flex-column-reverse flex-lg-row'>
           <Col lg={6} className=' d-flex align-items-center justify-content-center justify-content-lg-end mt-4 mt-lg-0' data-aos="fade-right">
             <div className=" d-flex flex-column gap-3 max_width_475">
               <h3 className=' mb-0 font_xlg line_height_lg font_Manrope fw-semibold light_white text-center text-lg-start'>Listing on <span className=' color_yellow'>Major Exchanges</span></h3>
