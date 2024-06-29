@@ -16,7 +16,7 @@ const Questions = () => {
         <div className="accordionbg">
         <img src={UnionAccordiontop} alt="UnionAccordiontop" className=' w-100 z-0 ' />
         <Container className='max_width_1140 z-2'>
-            <h2 className=' mb-0 z-2 light_white font_Manrope font_xl line_height_xl fw-normal text-center accord_padding_top'>Frequently Asked <span className=' color_yellow'>Questions</span></h2>
+            <h2 className=' mb-0 z-2 light_white font_Manrope font_xl line_height_xl fw-semibold text-center accord_padding_top'>Frequently Asked <span className=' color_yellow'>Questions</span></h2>
     <div className="margin_top_60 z-2 max_width_800 mx-auto accord_padding_bottom z-1 position-relative">
                     <Accordion defaultActiveKey="0">
                         <Accordion.Item eventKey="0">
