@@ -149,7 +149,7 @@ const About = () => {
                     </div>
                     <div className="d-flex flex-column pr_24">
                       <h6 className=' font_Manrope fw-normal font_sm line_height_xmd white_smoke mb-0'>Tokens Remaining</h6>
-                      <h5 className=' font_Manrope fw-bold font_sm line_height_xmd color_yellow mb-0 range_value'>{tokensRemaining.toLocaleString()}</h5>
+                      <h5 className=' font_Manrope fw-bold font_sm line_height_xmd light_white mb-0 range_value'>{tokensRemaining.toLocaleString()}</h5>
                     </div>
                   </div>
                   <div className="pt-sm-3 pt-1  position-relative">
